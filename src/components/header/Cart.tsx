@@ -12,7 +12,6 @@ import { useCart } from './CartContext';
 
 const CartDropdown: React.FC = () => {
   const { cartItems, removeFromCart } = useCart();
-console.log(cartItems)
   const activeItems = cartItems.length>0 ? cartItems.filter((item) => item.active) : [];
   const total = activeItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
   const freeShippingThreshold = 125;
