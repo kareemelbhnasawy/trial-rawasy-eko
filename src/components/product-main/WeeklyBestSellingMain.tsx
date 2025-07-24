@@ -127,7 +127,7 @@ const BlogGridMain: React.FC<BlogGridMainProps> = ({
             </span>
             <i className="fa-solid fa-bookmark" />
           </div>
-          <img src={`/assets/images/grocery/${ProductImage}`} alt="grocery" />
+          <img src={`/assets/images/products/${ProductImage}`} alt="construction materials" />
         </a>
         <div className="action-share-option">
           <span
