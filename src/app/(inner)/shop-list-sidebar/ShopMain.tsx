@@ -84,7 +84,7 @@ const BlogGridMain: React.FC<BlogGridMainProps> = ({
     const handleAdd = () => {
         addToCart({
             id: Date.now(), // unique ID
-            image: `/assets/images/grocery/${ProductImage}`,
+            image: `/assets/images/products/${ProductImage}`,
             title: ProductTitle ?? 'Default Product Title',
             price: parseFloat(Price ?? '0'),
             quantity: 1,
@@ -98,7 +98,7 @@ const addcart = () => toast('Successfully Add To Cart !');
     const { addToCompare } = useCompare();
     const handleCompare = () => {
         addToCompare({
-            image: `/assets/images/grocery/${ProductImage}`,
+            image: `/assets/images/products/${ProductImage}`,
             name: ProductTitle ?? 'Default Product Title',
             price: Price ?? '0',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', // Or dynamic if available
@@ -115,7 +115,7 @@ const addcart = () => toast('Successfully Add To Cart !');
     const handleWishlist = () => {
         addToWishlist({
             id: Date.now(),
-            image: `/assets/images/grocery/${ProductImage}`,
+            image: `/assets/images/products/${ProductImage}`,
             title: ProductTitle ?? 'Default Product Title',
             price: parseFloat(Price ?? '0'),
             quantity: 1,
@@ -135,7 +135,7 @@ const addcart = () => toast('Successfully Add To Cart !');
                         </span>
                         <i className="fa-solid fa-bookmark" />
                     </div>
-                    <img src={`/assets/images/grocery/${ProductImage}`} alt="grocery" />
+                    <img src={`/assets/images/products/${ProductImage}`} alt="grocery" />
                 </a>
                 <div className="action-share-option">
                     <span
