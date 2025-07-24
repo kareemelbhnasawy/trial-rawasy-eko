@@ -68,7 +68,7 @@ function FooterOne() {
                                 {/* single footer area wrapper */}
                                 {/* single footer area wrapper */}
                                 <div className="single-footer-wized">
-                                    <h3 className="footer-title">Shop Categories</h3>
+                                    <h3 className="footer-title">Material Categories</h3>
                                     <div className="footer-nav">
                                         <ul>
                                             <li>
