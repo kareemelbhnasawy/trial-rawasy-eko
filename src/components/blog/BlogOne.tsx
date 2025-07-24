@@ -13,8 +13,8 @@ interface PostType {
 }
 
 function BlogOne() {
-    // Slice posts 11 to 15 (index 10 to 14)
-    const selectedPosts = Posts.slice(11, 15);
+    // Show first 4 construction blog posts
+    const selectedPosts = Posts.slice(0, 4);
 
     return (
         <div>
