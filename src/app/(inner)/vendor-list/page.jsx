@@ -43,11 +43,11 @@ export default function Home() {
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="vendor-search-area-wrapper">
-                                    <h1 className="title">Vendors List</h1>
+                                    <h1 className="title">Construction Material Suppliers</h1>
                                     <form action="#" className="search-vendor-form">
                                         <input
                                             type="text"
-                                            placeholder="Search vendors (by name or ID)..."
+                                            placeholder="Search suppliers (by name, category, or location)..."
                                         />
                                         <a href="/shop" className="rts-btn btn-primary radious-sm with-icon">
                                             <div className="btn-text">Search</div>
