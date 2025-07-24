@@ -42,11 +42,11 @@ const CompareElements: React.FC = () => {
   const [activeModal, setActiveModal] = useState<ModalType>(null);
   const handleClose = () => setActiveModal(null);
 
-  const [activeImage, setActiveImage] = useState(`/assets/images/grocery/${blogPost.bannerImg}`);
+  const [activeImage, setActiveImage] = useState(`/assets/images/products/${blogPost.bannerImg}`);
   const thumbnails = [
     {
       id: 'one',
-      src: `/assets/images/grocery/${blogPost.bannerImg}`,
+      src: `/assets/images/products/${blogPost.bannerImg}`,
       alt: blogPost.title,
     },
     {
