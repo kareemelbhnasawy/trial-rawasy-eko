@@ -62,8 +62,8 @@ function FeatureOne() {
                                     </svg>
                                 </div>
                                 <div className="content">
-                                    <h4 className="title">Easy Return Policy</h4>
-                                    <span>Orders $50 or more</span>
+                                    <h4 className="title">Professional Quality</h4>
+                                    <span>ASTM & ANSI certified materials</span>
                                 </div>
                             </div>
                         </div>
