@@ -1,0 +1,30 @@
+<!-- This is a mock SVG that would represent a cement bag product image -->
+<svg width="300" height="400" viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="300" height="400" fill="#f8f9fa"/>
+  
+  <!-- Cement bag -->
+  <rect x="50" y="50" width="200" height="300" rx="10" fill="#E5E5E5" stroke="#2C3C28" stroke-width="3"/>
+  
+  <!-- Brand label -->
+  <rect x="70" y="80" width="160" height="60" fill="#629D23"/>
+  <text x="150" y="105" font-family="Arial" font-size="18" font-weight="bold" fill="white" text-anchor="middle">CEMEX</text>
+  <text x="150" y="125" font-family="Arial" font-size="14" fill="white" text-anchor="middle">PORTLAND CEMENT</text>
+  
+  <!-- Type and weight -->
+  <text x="150" y="170" font-family="Arial" font-size="24" font-weight="bold" fill="#2C3C28" text-anchor="middle">TYPE I</text>
+  <text x="150" y="200" font-family="Arial" font-size="20" fill="#2C3C28" text-anchor="middle">94 LBS</text>
+  <text x="150" y="220" font-family="Arial" font-size="16" fill="#666" text-anchor="middle">(42.6 kg)</text>
+  
+  <!-- Specifications -->
+  <rect x="70" y="250" width="160" height="80" fill="white" stroke="#ddd" stroke-width="1"/>
+  <text x="80" y="270" font-family="Arial" font-size="12" fill="#333">• ASTM C150 Compliant</text>
+  <text x="80" y="285" font-family="Arial" font-size="12" fill="#333">• High Early Strength</text>
+  <text x="80" y="300" font-family="Arial" font-size="12" fill="#333">• 4000 PSI @ 28 days</text>
+  <text x="80" y="315" font-family="Arial" font-size="12" fill="#333">• Made in USA</text>
+  
+  <!-- Price badge -->
+  <circle cx="250" cy="80" r="25" fill="#FFE884" stroke="#2C3C28" stroke-width="2"/>
+  <text x="250" y="78" font-family="Arial" font-size="10" font-weight="bold" fill="#2C3C28" text-anchor="middle">$12.50</text>
+  <text x="250" y="88" font-family="Arial" font-size="8" fill="#2C3C28" text-anchor="middle">per bag</text>
+</svg>
