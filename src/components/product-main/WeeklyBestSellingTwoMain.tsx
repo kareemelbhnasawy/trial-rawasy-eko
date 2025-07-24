@@ -76,7 +76,7 @@ const BlogGridMain: React.FC<BlogGridMainProps> = ({
  
 
             <a href={`/shop/${Slug}`} className="thumbanil">
-                <img src={`/assets/images/best-seller/${ProductImage}`} alt="seller" />
+                <img src={`/assets/images/products/${ProductImage}`} alt="seller" />
                 <div className="action-share-option">
                     <div
                         className="single-action openuptip message-show-action"
@@ -127,7 +127,7 @@ const BlogGridMain: React.FC<BlogGridMainProps> = ({
     <ProductDetails
         show={activeModal === 'two'}
         handleClose={handleClose}
-        productImage={`/assets/images/grocery/${ProductImage}`}
+        productImage={`/assets/images/products/${ProductImage}`}
         productTitle={ProductTitle ?? 'Default Product Title'}
         productPrice={Price ?? '0'}
       />

@@ -65,7 +65,7 @@ const BlogGridMain: React.FC<BlogGridMainProps> = ({
         <>
 
             <a href={`/shop/${Slug}`} className="thumbnail">
-                <img src={`/assets/images/grocery/${ProductImage}`} alt="product" />
+                <img src={`/assets/images/products/${ProductImage}`} alt="construction materials" />
             </a>
             <div className="body-content">
                 <div className="top">

@@ -37,7 +37,7 @@ const BlogGridMain: React.FC<BlogGridMainProps> = ({
     const handleAdd = () => {
         addToCart({
             id: Date.now(), // use a unique ID per click
-            image: `/assets/images/grocery/${ProductImage}`,
+            image: `/assets/images/products/${ProductImage}`,
             title: ProductTitle ?? 'How to growing your business',
             price: Price ? parseFloat(Price) : 0,
             quantity: 1,
@@ -49,7 +49,7 @@ const BlogGridMain: React.FC<BlogGridMainProps> = ({
     const handleWishlist = () => {
         addToWishlist({
             id: Date.now(),
-            image: `/assets/images/grocery/${ProductImage}`,
+            image: `/assets/images/products/${ProductImage}`,
             title: ProductTitle ?? 'Default Product Title',
             price: parseFloat(Price ?? '0'),
             quantity: 1,
@@ -62,7 +62,7 @@ const BlogGridMain: React.FC<BlogGridMainProps> = ({
     const { addToCompare } = useCompare();
     const handleCompare = () => {
         addToCompare({
-            image: `/assets/images/grocery/${ProductImage}`,
+            image: `/assets/images/products/${ProductImage}`,
             name: ProductTitle ?? 'Default Product Title',
             price: Price ?? '0',
             description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.', // Or dynamic if available
@@ -88,7 +88,7 @@ const BlogGridMain: React.FC<BlogGridMainProps> = ({
             </div>
             <div className="image-and-action-area-wrapper">
                 <a href={`/shop/${Slug}`} className="thumbnail-preview">
-                    <img src={`/assets/images/grocery/${ProductImage}`} alt="grocery" />
+                    <img src={`/assets/images/products/${ProductImage}`} alt="construction materials" />
                 </a>
                 <div className="action-share-option">
                     <div
@@ -166,7 +166,7 @@ const BlogGridMain: React.FC<BlogGridMainProps> = ({
     <ProductDetails
         show={activeModal === 'two'}
         handleClose={handleClose}
-        productImage={`/assets/images/grocery/${ProductImage}`}
+        productImage={`/assets/images/products/${ProductImage}`}
         productTitle={ProductTitle ?? 'Default Product Title'}
         productPrice={Price ?? '0'}
       />
