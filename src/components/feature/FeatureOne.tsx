@@ -138,8 +138,8 @@ function FeatureOne() {
                                     </svg>
                                 </div>
                                 <div className="content">
-                                    <h4 className="title">Support 24/7</h4>
-                                    <span>Orders $50 or more</span>
+                                    <h4 className="title">Expert Support</h4>
+                                    <span>Construction material specialists</span>
                                 </div>
                             </div>
                         </div>
