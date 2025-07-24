@@ -40,9 +40,6 @@ function NavItem() {
                     <li className="parent">
                         <a href="/about">About</a>
                     </li>
-                    <li className="parent">
-                        <a href="/calculators">Calculators & Tools</a>
-                    </li>
                     <li className="parent with-megamenu">
                         <a href="#">Shop</a>
                         <div className="rts-megamenu">
