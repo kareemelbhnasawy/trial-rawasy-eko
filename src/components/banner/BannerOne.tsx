@@ -1,109 +1,139 @@
 "use client"
-import React, { useEffect } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper/modules';
-import CategoryBb from './CategoryBb';
-const BannerOne = () => {
+import type React from "react"
+import Link from "next/link"
 
-    return (
-        <div className="background-light-gray-color rts-section-gap bg_light-1 pt_sm--20">
-            {/* rts banner area start */}
-            <div className="rts-banner-area-one mb--30">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-12">
-                            <div className="category-area-main-wrapper-one">
-                                <Swiper
-                                    modules={[Navigation, Autoplay]}
-                                    spaceBetween={1}
-                                    slidesPerView={1}
-                                    loop={true}
-                                    speed={2000}
-                                    autoplay={{
-                                        delay: 4000,
-                                    }}
-                                    navigation={{
-                                        nextEl: '.swiper-button-next',
-                                        prevEl: '.swiper-button-prev',
-                                    }}
-                                    breakpoints={{
-                                        0: { slidesPerView: 1, spaceBetween: 0 },
-                                        320: { slidesPerView: 1, spaceBetween: 0 },
-                                        480: { slidesPerView: 1, spaceBetween: 0 },
-                                        640: { slidesPerView: 1, spaceBetween: 0 },
-                                        840: { slidesPerView: 1, spaceBetween: 0 },
-                                        1140: { slidesPerView: 1, spaceBetween: 0 },
-                                    }}
-                                >
-                                    <SwiperSlide>
-                                        <div className="banner-bg-image bg_image bg_one-banner ptb--120 ptb_md--80 ptb_sm--60">
-                                            <div className="banner-one-inner-content">
-                                                <span className="pre">
-                                                    Get up to 30% off on your first $150 purchase
-                                                </span>
-                                                <h1 className="title">
-                                                    Do not miss our amazing <br />
-                                                    grocery deals
-                                                </h1>
-                                                <a
-                                                    href="/shop"
-                                                    className="rts-btn btn-primary radious-sm with-icon"
-                                                >
-                                                    <div className="btn-text">Shop Now</div>
-                                                    <div className="arrow-icon">
-                                                        <i className="fa-light fa-arrow-right"></i>
-                                                    </div>
-                                                    <div className="arrow-icon">
-                                                        <i className="fa-light fa-arrow-right"></i>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
+const BannerOne: React.FC = () => {
+  return (
+    <div className="rts-banner-area construction-banner">
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-lg-6">
+            <div className="banner-content">
+              <div className="banner-badge mb-3">
+                <span className="badge bg-primary text-white px-3 py-2">
+                  <i className="fa-solid fa-hard-hat me-2"></i>
+                  Professional Construction Materials
+                </span>
+              </div>
 
-                                    <SwiperSlide>
-                                        <div className="banner-bg-image bg_image bg_one-banner two ptb--120 ptb_md--80 ptb_sm--60">
-                                            <div className="banner-one-inner-content">
-                                                <span className="pre">
-                                                    Get up to 30% off on your first $150 purchase
-                                                </span>
-                                                <h1 className="title">
-                                                    Do not miss our amazing <br />
-                                                    grocery deals
-                                                </h1>
-                                                <a
-                                                    href="/shop"
-                                                    className="rts-btn btn-primary radious-sm with-icon"
-                                                >
-                                                    <div className="btn-text">Shop Now</div>
-                                                    <div className="arrow-icon">
-                                                        <i className="fa-light fa-arrow-right"></i>
-                                                    </div>
-                                                    <div className="arrow-icon">
-                                                        <i className="fa-light fa-arrow-right"></i>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
-                                </Swiper>
+              <h1 className="banner-title mb-4">
+                Build Your Dreams with
+                <span className="text-primary d-block">Rawasy رواسي</span>
+              </h1>
 
-                                <button className="swiper-button-next">
-                                    <i className="fa-regular fa-arrow-right"></i>
-                                </button>
-                                <button className="swiper-button-prev">
-                                    <i className="fa-regular fa-arrow-left"></i>
-                                </button>
-                            </div>
-                        </div>
+              <p className="banner-description mb-4">
+                Your trusted B2B/B2C marketplace for premium construction materials, building supplies, and professional
+                tools. Serving contractors, builders, architects, and DIY enthusiasts with quality materials and
+                competitive prices.
+              </p>
+
+              <div className="banner-features mb-4">
+                <div className="row">
+                  <div className="col-md-6">
+                    <div className="feature-item d-flex align-items-center mb-2">
+                      <i className="fa-solid fa-check-circle text-success me-2"></i>
+                      <span>Bulk Pricing Available</span>
                     </div>
+                    <div className="feature-item d-flex align-items-center mb-2">
+                      <i className="fa-solid fa-check-circle text-success me-2"></i>
+                      <span>Fast Delivery</span>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="feature-item d-flex align-items-center mb-2">
+                      <i className="fa-solid fa-check-circle text-success me-2"></i>
+                      <span>Technical Support</span>
+                    </div>
+                    <div className="feature-item d-flex align-items-center mb-2">
+                      <i className="fa-solid fa-check-circle text-success me-2"></i>
+                      <span>Quality Certified</span>
+                    </div>
+                  </div>
                 </div>
+              </div>
+
+              <div className="banner-actions">
+                <Link href="/shop" className="btn btn-primary btn-lg me-3">
+                  <i className="fa-solid fa-shopping-cart me-2"></i>
+                  Shop Now
+                </Link>
+                <Link href="/bulk-quote" className="btn btn-outline-primary btn-lg">
+                  <i className="fa-solid fa-calculator me-2"></i>
+                  Get Bulk Quote
+                </Link>
+              </div>
+
+              <div className="banner-stats mt-4">
+                <div className="row">
+                  <div className="col-4">
+                    <div className="stat-item text-center">
+                      <h4 className="text-primary mb-1">500+</h4>
+                      <small className="text-muted">Suppliers</small>
+                    </div>
+                  </div>
+                  <div className="col-4">
+                    <div className="stat-item text-center">
+                      <h4 className="text-primary mb-1">10K+</h4>
+                      <small className="text-muted">Products</small>
+                    </div>
+                  </div>
+                  <div className="col-4">
+                    <div className="stat-item text-center">
+                      <h4 className="text-primary mb-1">50K+</h4>
+                      <small className="text-muted">Happy Customers</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            {/* rts banner area end */}
+          </div>
 
-            <CategoryBb />
+          <div className="col-lg-6">
+            <div className="banner-image">
+              <div className="construction-hero-image position-relative">
+                <img
+                  src="/placeholder.svg?height=500&width=600"
+                  alt="Construction Site"
+                  className="img-fluid rounded-3 shadow-lg"
+                />
+
+                {/* Floating Elements */}
+                <div className="floating-element position-absolute" style={{ top: "20px", right: "20px" }}>
+                  <div className="bg-white rounded-3 p-3 shadow">
+                    <div className="d-flex align-items-center">
+                      <i className="fa-solid fa-truck text-primary me-2"></i>
+                      <div>
+                        <small className="text-muted d-block">Fast Delivery</small>
+                        <strong>Same Day</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="floating-element position-absolute" style={{ bottom: "20px", left: "20px" }}>
+                  <div className="bg-primary text-white rounded-3 p-3 shadow">
+                    <div className="d-flex align-items-center">
+                      <i className="fa-solid fa-percentage me-2"></i>
+                      <div>
+                        <small className="opacity-75 d-block">Bulk Discount</small>
+                        <strong>Up to 30% Off</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    );
-};
+      </div>
 
-export default BannerOne;
+      {/* Background Elements */}
+      <div className="banner-bg-elements">
+        <div className="bg-element bg-element-1"></div>
+        <div className="bg-element bg-element-2"></div>
+      </div>
+    </div>
+  )
+}
+
+export default BannerOne

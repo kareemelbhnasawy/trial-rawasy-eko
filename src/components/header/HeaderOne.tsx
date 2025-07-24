@@ -1,309 +1,260 @@
 "use client"
-import React, { useState, useEffect, useRef } from 'react';
-import HeaderNav from './HeaderNav';
-import CategoryMenu from './CategoryMenu';
-import Cart from './Cart';
-import WishList from './WishList';
-import Sidebar from './Sidebar';
-import BackToTop from "@/components/common/BackToTop";
-import { useCompare } from '@/components/header/CompareContext';
-import { useRouter } from 'next/navigation';
+import type React from "react"
+import { useState } from "react"
+import Link from "next/link"
+import { useCart } from "./CartContext"
+import { useWishlist } from "./WishlistContext"
+import Cart from "./Cart"
+import WishList from "./WishList"
+import MobileMenu from "./MobileMenu"
 
-function HeaderOne() {
-    const { compareItems } = useCompare();
+const HeaderOne: React.FC = () => {
+  const [isCartOpen, setIsCartOpen] = useState(false)
+  const [isWishlistOpen, setIsWishlistOpen] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [searchQuery, setSearchQuery] = useState("")
+  const [language, setLanguage] = useState("en")
 
-    // Countdown setup
-    useEffect(() => {
-        const countDownElements = document.querySelectorAll<HTMLElement>('.countDown');
-        const endDates: Date[] = [];
+  const { cartItems } = useCart()
+  const { wishlistItems } = useWishlist()
 
-        countDownElements.forEach((el) => {
-            const match = el.innerText.match(/([0-9]{1,2})\/([0-9]{1,2})\/([0-9]{4}) ([0-9]{2}):([0-9]{2}):([0-9]{2})/);
-            if (!match) return;
+  const cartCount = cartItems.filter((item) => item.active).length
+  const wishlistCount = wishlistItems.length
 
-            const end = new Date(+match[3], +match[1] - 1, +match[2], +match[4], +match[5], +match[6]);
-            if (end > new Date()) {
-                endDates.push(end);
-                const next = calcTime(end.getTime() - new Date().getTime());
-                el.innerHTML = renderDisplay(next);
-            } else {
-                el.innerHTML = `<p class="end">Sorry, your session has expired.</p>`;
-            }
-        });
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault()
+    if (searchQuery.trim()) {
+      window.location.href = `/shop?search=${encodeURIComponent(searchQuery)}`
+    }
+  }
 
-        const interval = setInterval(() => {
-            countDownElements.forEach((el, i) => {
-                const end = endDates[i];
-                if (!end) return;
-                const now = new Date();
-                const diff = end.getTime() - now.getTime();
+  const toggleLanguage = () => {
+    setLanguage((prev) => (prev === "en" ? "ar" : "en"))
+    document.documentElement.dir = language === "en" ? "rtl" : "ltr"
+  }
 
-                if (diff <= 0) {
-                    el.innerHTML = `<p class="end">Sorry, your session has expired.</p>`;
-                } else {
-                    const next = calcTime(diff);
-                    el.innerHTML = renderDisplay(next);
-                }
-            });
-        }, 1000);
-
-        return () => clearInterval(interval);
-    }, []);
-
-    const calcTime = (milliseconds: number) => {
-        const secondsTotal = Math.floor(milliseconds / 1000);
-        const days = Math.floor(secondsTotal / 86400);
-        const hours = Math.floor((secondsTotal % 86400) / 3600);
-        const minutes = Math.floor((secondsTotal % 3600) / 60);
-        const seconds = secondsTotal % 60;
-        return [days, hours, minutes, seconds].map((v) => v.toString().padStart(2, '0'));
-    };
-
-    const renderDisplay = (timeArr: string[]) => {
-        return timeArr
-            .map((item) => `<div class='container'><div class='a'><div>${item}</div></div></div>`)
-            .join('');
-    };
-
-    const router = useRouter();
-    const [searchTerm, setSearchTerm] = useState('');
-    const [suggestions, setSuggestions] = useState<string[]>([]);
-    const [showSuggestions, setShowSuggestions] = useState(false);
-    const inputRef = useRef<HTMLInputElement>(null);
-
-    const allSuggestions = [
-        "Profitable business makes your profit Best Solution",
-        "Details Profitable business makes your profit",
-        "One Profitable business makes your profit",
-        "Me Profitable business makes your profit",
-        "Details business makes your profit",
-        "Firebase business makes your profit",
-        "Netlyfy business makes your profit",
-        "Profitable business makes your profit",
-        "Valuable business makes your profit",
-        "System business makes your profit",
-        "Profitables business makes your profit",
-        "Content business makes your profit",
-        "Dalivaring business makes your profit",
-        "Staning business makes your profit",
-        "Best business makes your profit",
-        "cooler business makes your profit",
-        "Best-one Profitable business makes your profit",
-        "Super Fresh Meat",
-        "Original Fresh frut",
-        "Organic Fresh frut",
-        "Lite Fresh frut"
-    ];
-
-    useEffect(() => {
-        if (searchTerm.trim().length > 0) {
-            const filtered = allSuggestions.filter(item =>
-                item.toLowerCase().includes(searchTerm.toLowerCase())
-            );
-            setSuggestions(filtered.slice(0, 5));
-            setShowSuggestions(true);
-        } else {
-            setSuggestions([]);
-            setShowSuggestions(false);
-        }
-    }, [searchTerm]);
-
-    const handleSuggestionClick = (suggestion: string) => {
-        setSearchTerm(suggestion);
-        setShowSuggestions(false);
-        router.push(`/shop?search=${encodeURIComponent(suggestion)}`);
-    };
-
-    useEffect(() => {
-        const handleClickOutside = (event: MouseEvent) => {
-            if (inputRef.current && !inputRef.current.contains(event.target as Node)) {
-                setShowSuggestions(false);
-            }
-        };
-        document.addEventListener('mousedown', handleClickOutside);
-        return () => document.removeEventListener('mousedown', handleClickOutside);
-    }, []);
-
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        if (searchTerm.trim()) {
-            router.push(`/shop?search=${encodeURIComponent(searchTerm.trim())}`);
-            setShowSuggestions(false);
-        } else {
-            router.push('/shop');
-        }
-    };
-
-    return (
-        <>
-            <div className="rts-header-one-area-one">
-                {/* top bar */}
-                <div className="header-top-area">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="bwtween-area-header-top">
-                                    <div className="discount-area">
-                                        <p className="disc">
-                                            FREE delivery &amp; 40% Discount for next 3 orders! Place your 1st order in.
-                                        </p>
-                                        <div className="countdown">
-                                            <div className="countDown">10/05/2025 10:20:00</div>
-                                        </div>
-                                    </div>
-                                    <div className="contact-number-area">
-                                        <p>Need help? Call Us: <a href="tel:+4733378901">+258 3268 21485</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* mid bar */}
-                <div className="header-mid-one-wrapper">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="header-mid-wrapper-between">
-                                    <div className="nav-sm-left">
-                                        <ul className="nav-h_top">
-                                            <li><a href="/about">About Us</a></li>
-                                            <li><a href="/account">My Account</a></li>
-                                            <li><a href="/wishlist">Wishlist</a></li>
-                                        </ul>
-                                        <p className="para">We deliver to your everyday from 7:00 to 22:00</p>
-                                    </div>
-                                    <div className="nav-sm-left">
-                                        <ul className="nav-h_top language">
-                                            <li className="category-hover-header language-hover">
-                                                <a href="#">English</a>
-                                                <ul className="category-sub-menu">
-                                                    <li><a href="#"><span>Italian</span></a></li>
-                                                    <li><a href="#"><span>Russian</span></a></li>
-                                                    <li><a href="#"><span>Chinian</span></a></li>
-                                                </ul>
-                                            </li>
-                                            <li className="category-hover-header language-hover">
-                                                <a href="#">USD</a>
-                                                <ul className="category-sub-menu">
-                                                    <li><a href="#"><span>Rubol</span></a></li>
-                                                    <li><a href="#"><span>Rupi</span></a></li>
-                                                    <li><a href="#"><span>Euro</span></a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="/trackorder">Track Order</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* logo + search */}
-                <div className="search-header-area-main">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="logo-search-category-wrapper">
-                                    <a href="/" className="logo-area">
-                                        <img src="/assets/images/logo/logo-01.svg" alt="logo-main" className="logo" />
-                                    </a>
-                                    <div className="category-search-wrapper">
-                                        <div className="category-btn category-hover-header">
-                                            <img className="parent" src="/assets/images/icons/bar-1.svg" alt="icons" />
-                                            <span>Categories</span>
-                                            <CategoryMenu />
-                                        </div>
-                                        <form onSubmit={handleSubmit} className="search-header" autoComplete="off">
-                                            <input
-                                                ref={inputRef}
-                                                type="text"
-                                                placeholder="Search for products, categories or brands"
-                                                required
-                                                value={searchTerm}
-                                                onChange={(e) => setSearchTerm(e.target.value)}
-                                                onFocus={() => searchTerm.length > 0 && setShowSuggestions(true)}
-                                            />
-                                            <button type="submit" className="rts-btn btn-primary radious-sm with-icon">
-                                                <div className="btn-text">Search</div>
-                                                <div className="arrow-icon">
-                                                    <i className="fa-light fa-magnifying-glass" />
-                                                </div>
-                                            </button>
-
-                                            {/* Autocomplete dropdown */}
-                                            {showSuggestions && suggestions.length > 0 && (
-                                                <ul className="autocomplete-suggestions" style={{
-                                                    position: 'absolute',
-                                                    backgroundColor: '#fff',
-                                                    border: '1px solid #ccc',
-                                                    marginTop: '4px',
-                                                    width: '100%',
-                                                    maxHeight: '200px',
-                                                    overflowY: 'auto',
-                                                    zIndex: 1000,
-                                                    listStyleType: 'none',
-                                                    padding: 0,
-                                                    borderRadius: '4px',
-                                                }}>
-                                                    {suggestions.map((suggestion, index) => (
-                                                        <li
-                                                            key={index}
-                                                            onClick={() => handleSuggestionClick(suggestion)}
-                                                            style={{
-                                                                padding: '8px 12px',
-                                                                cursor: 'pointer',
-                                                            }}
-                                                            onMouseDown={(e) => e.preventDefault()} // prevent input blur
-                                                        >
-                                                            {suggestion}
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            )}
-                                        </form>
-                                    </div>
-                                    <div className="actions-area">
-                                        <div className="search-btn" id="searchs">
-                                            <svg width={17} height={16} viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="..." fill="#1F1F25" />
-                                            </svg>
-                                        </div>
-                                        <div className="menu-btn" id="menu-btn">
-                                            <svg width={20} height={16} viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect y={14} width={20} height={2} fill="#1F1F25" />
-                                                <rect y={7} width={20} height={2} fill="#1F1F25" />
-                                                <rect width={20} height={2} fill="#1F1F25" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div className="accont-wishlist-cart-area-header">
-                                        <a href="/account" className="btn-border-only account">
-                                            <i className="fa-light fa-user" />
-                                            <span>Account</span>
-                                        </a>
-                                        <a href="/shop-compare" className="btn-border-only account compare-number">
-                                            <i className="fa-regular fa-code-compare" />
-                                            <span className="number">{compareItems.length}</span>
-                                        </a>
-                                        <WishList />
-                                        <Cart />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* main nav */}
-                <HeaderNav />
+  return (
+    <>
+      {/* Top Header */}
+      <div className="rts-header-top-area bg-primary text-white py-2">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6">
+              <div className="header-top-left">
+                <span className="me-4">
+                  <i className="fa-solid fa-phone me-2"></i>
+                  +1 (555) 123-4567
+                </span>
+                <span>
+                  <i className="fa-solid fa-envelope me-2"></i>
+                  info@rawasy.com
+                </span>
+              </div>
             </div>
-            <Sidebar />
-            <BackToTop />
-        </>
-    );
+            <div className="col-lg-6">
+              <div className="header-top-right text-end">
+                <button className="btn btn-sm btn-outline-light me-3" onClick={toggleLanguage}>
+                  {language === "en" ? "العربية" : "English"}
+                </button>
+                <Link href="/login" className="text-white me-3">
+                  <i className="fa-solid fa-user me-1"></i>
+                  {language === "en" ? "Login" : "تسجيل الدخول"}
+                </Link>
+                <Link href="/register" className="text-white">
+                  {language === "en" ? "Register" : "إنشاء حساب"}
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Header */}
+      <header className="rts-header-area header-one">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-xl-2 col-lg-2 col-md-6 col-6">
+              <div className="header-logo">
+                <Link href="/">
+                  <div className="construction-logo d-flex align-items-center">
+                    <div className="logo-icon me-2">
+                      <i className="fa-solid fa-building text-primary" style={{ fontSize: "2rem" }}></i>
+                    </div>
+                    <div className="logo-text">
+                      <h3 className="mb-0 text-primary fw-bold">Rawasy</h3>
+                      <small className="text-muted">رواسي</small>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            </div>
+
+            <div className="col-xl-6 col-lg-6 d-none d-lg-block">
+              <div className="header-search-area">
+                <form onSubmit={handleSearch} className="search-form">
+                  <div className="input-group">
+                    <select className="form-select construction-category-select">
+                      <option value="">All Categories</option>
+                      <option value="cement">Cement & Concrete</option>
+                      <option value="steel">Steel & Rebar</option>
+                      <option value="lumber">Lumber & Wood</option>
+                      <option value="electrical">Electrical</option>
+                      <option value="plumbing">Plumbing</option>
+                      <option value="tools">Tools & Equipment</option>
+                      <option value="insulation">Insulation</option>
+                      <option value="roofing">Roofing</option>
+                      <option value="tiles">Tiles & Flooring</option>
+                      <option value="paint">Paint & Coating</option>
+                    </select>
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder={language === "en" ? "Search construction materials..." : "البحث عن مواد البناء..."}
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                    />
+                    <button className="btn btn-primary" type="submit">
+                      <i className="fa-solid fa-search"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div className="col-xl-4 col-lg-4 col-md-6 col-6">
+              <div className="header-right-area d-flex align-items-center justify-content-end">
+                {/* Bulk Quote Button */}
+                <Link href="/bulk-quote" className="btn btn-outline-primary me-3 d-none d-md-block">
+                  <i className="fa-solid fa-calculator me-1"></i>
+                  {language === "en" ? "Bulk Quote" : "عرض سعر بالجملة"}
+                </Link>
+
+                {/* Wishlist */}
+                <div className="header-cart-area me-3">
+                  <button className="cart-btn position-relative" onClick={() => setIsWishlistOpen(true)}>
+                    <i className="fa-regular fa-heart"></i>
+                    {wishlistCount > 0 && (
+                      <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        {wishlistCount}
+                      </span>
+                    )}
+                  </button>
+                </div>
+
+                {/* Cart */}
+                <div className="header-cart-area me-3">
+                  <button className="cart-btn position-relative" onClick={() => setIsCartOpen(true)}>
+                    <i className="fa-regular fa-shopping-cart"></i>
+                    {cartCount > 0 && (
+                      <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                        {cartCount}
+                      </span>
+                    )}
+                  </button>
+                </div>
+
+                {/* Mobile Menu Toggle */}
+                <button className="mobile-menu-toggle d-lg-none" onClick={() => setIsMobileMenuOpen(true)}>
+                  <i className="fa-solid fa-bars"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Navigation Menu */}
+        <div className="header-nav-area bg-light py-2 d-none d-lg-block">
+          <div className="container">
+            <nav className="main-navigation">
+              <ul className="nav-menu d-flex align-items-center">
+                <li>
+                  <Link href="/" className="nav-link">
+                    Home
+                  </Link>
+                </li>
+                <li className="dropdown">
+                  <a href="#" className="nav-link dropdown-toggle">
+                    Categories
+                  </a>
+                  <ul className="dropdown-menu construction-categories">
+                    <li>
+                      <Link href="/category/cement">Cement & Concrete</Link>
+                    </li>
+                    <li>
+                      <Link href="/category/steel">Steel & Rebar</Link>
+                    </li>
+                    <li>
+                      <Link href="/category/lumber">Lumber & Wood</Link>
+                    </li>
+                    <li>
+                      <Link href="/category/electrical">Electrical</Link>
+                    </li>
+                    <li>
+                      <Link href="/category/plumbing">Plumbing</Link>
+                    </li>
+                    <li>
+                      <Link href="/category/tools">Tools & Equipment</Link>
+                    </li>
+                    <li>
+                      <Link href="/category/insulation">Insulation</Link>
+                    </li>
+                    <li>
+                      <Link href="/category/roofing">Roofing</Link>
+                    </li>
+                    <li>
+                      <Link href="/category/tiles">Tiles & Flooring</Link>
+                    </li>
+                    <li>
+                      <Link href="/category/paint">Paint & Coating</Link>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <Link href="/suppliers" className="nav-link">
+                    Suppliers
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/bulk-orders" className="nav-link">
+                    Bulk Orders
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/project-calculator" className="nav-link">
+                    Calculator
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/technical-support" className="nav-link">
+                    Support
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about" className="nav-link">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="nav-link">
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      {/* Cart Sidebar */}
+      <Cart isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
+
+      {/* Wishlist Sidebar */}
+      <WishList isOpen={isWishlistOpen} onClose={() => setIsWishlistOpen(false)} />
+
+      {/* Mobile Menu */}
+      <MobileMenu isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)} />
+    </>
+  )
 }
 
-export default HeaderOne;
+export default HeaderOne

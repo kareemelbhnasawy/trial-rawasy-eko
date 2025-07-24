@@ -1,4 +1,3 @@
-
 import BannerTwo from "@/components/banner/BannerTwo";
 import HeaderTwo from "@/components/header/HeaderTwo";
 import CategoryOne from "@/components/category/CategoryOne";

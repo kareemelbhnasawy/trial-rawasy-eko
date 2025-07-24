@@ -1072,13 +1072,4 @@
     }
 
     rtsJs.m();
-  })(jQuery, window) 
-
-
-
-
-
-
-
-
-
+  })(jQuery, window)
