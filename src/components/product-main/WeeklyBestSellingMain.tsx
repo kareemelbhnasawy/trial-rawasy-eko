@@ -167,7 +167,7 @@ const BlogGridMain: React.FC<BlogGridMainProps> = ({
         <a href={`/shop/${Slug}`}>
           <h4 className="title">{ProductTitle ?? 'How to growing your business'}</h4>
         </a>
-        <span className="availability">500g Pack</span>
+        <span className="availability">In Stock</span>
         <div className="price-area">
           <span className="current">{`$${Price}`}</span>
           <div className="previous">$36.00</div>
