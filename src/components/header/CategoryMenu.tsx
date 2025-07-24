@@ -18,52 +18,52 @@ function CategoryMenu() {
     const menuItems: MenuItem[] = [
         {
             icon: "01.svg",
-            label: "Breakfast & Dairy",
-            submenu: ["Breakfast", "Dinner", "Pumking"],
+            label: "Building Materials (مواد البناء)",
+            submenu: ["Cement & Concrete", "Steel & Metal", "Bricks & Blocks"],
         },
         {
             icon: "02.svg",
-            label: "Meats & Seafood",
-            submenu: ["Breakfast", "Dinner", "Pumking"],
+            label: "Construction Tools (أدوات البناء)",
+            submenu: ["Power Tools", "Hand Tools", "Measuring Tools"],
         },
         {
             icon: "03.svg",
-            label: "Breads & Bakery",
+            label: "Heavy Equipment (المعدات الثقيلة)",
             submenu: null,
         },
         {
             icon: "04.svg",
-            label: "Chips & Snacks",
-            submenu: ["Breakfast", "Dinner", "Pumking"],
+            label: "Electrical Materials (المواد الكهربائية)",
+            submenu: ["Wires & Cables", "Switches", "Conduits"],
         },
         {
             icon: "05.svg",
-            label: "Medical Healthcare",
+            label: "Plumbing Supplies (مواد السبا��ة)",
             submenu: null,
         },
         {
             icon: "06.svg",
-            label: "Breads & Bakery",
+            label: "Wood & Lumber",
             submenu: null,
         },
         {
             icon: "07.svg",
-            label: "Biscuits & Snacks",
-            submenu: ["Breakfast", "Dinner", "Pumking"],
+            label: "Safety Equipment (معدات السلامة)",
+            submenu: ["Helmets", "Protective Gear", "Safety Signs"],
         },
         {
             icon: "08.svg",
-            label: "Frozen Foods",
+            label: "Roofing Materials",
             submenu: null,
         },
         {
             icon: "09.svg",
-            label: "Grocery & Staples",
+            label: "Insulation & Flooring",
             submenu: null,
         },
         {
             icon: "10.svg",
-            label: "Other Items",
+            label: "Hardware & Fasteners",
             submenu: null,
         },
     ];

@@ -8,6 +8,7 @@ import FeatureDiscount from "@/components/product/FeatureDiscount";
 import TrandingProduct from "@/components/product/TrandingProduct";
 import BlogOne from "@/components/blog/BlogOne";
 import FooterOne from "@/components/footer/FooterOne";
+import BulkOrderCalculator from "@/components/calculator/BulkOrderCalculator";
 import { CartProvider } from "@/components/header/CartContext";
 import { WishlistProvider } from "@/components/header/WishlistContext";
 import { ToastContainer, toast } from 'react-toastify';
@@ -24,6 +25,7 @@ export default function Home() {
           <BannerOne />
           <FeatureOne />
           <FeatureProduct />
+          <BulkOrderCalculator />
           <DiscountProduct />
           <WeeklyBestSelling />
           <FeatureDiscount />

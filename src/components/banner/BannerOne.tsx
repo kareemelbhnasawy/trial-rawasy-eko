@@ -39,17 +39,17 @@ const BannerOne = () => {
                                         <div className="banner-bg-image bg_image bg_one-banner ptb--120 ptb_md--80 ptb_sm--60">
                                             <div className="banner-one-inner-content">
                                                 <span className="pre">
-                                                    Get up to 30% off on your first $150 purchase
+                                                    Bulk discounts available - Save up to 25% on construction materials
                                                 </span>
                                                 <h1 className="title">
-                                                    Do not miss our amazing <br />
-                                                    grocery deals
+                                                    Build with confidence <br />
+                                                    Professional construction materials
                                                 </h1>
                                                 <a
                                                     href="/shop"
                                                     className="rts-btn btn-primary radious-sm with-icon"
                                                 >
-                                                    <div className="btn-text">Shop Now</div>
+                                                    <div className="btn-text">Browse Materials</div>
                                                     <div className="arrow-icon">
                                                         <i className="fa-light fa-arrow-right"></i>
                                                     </div>
@@ -65,17 +65,17 @@ const BannerOne = () => {
                                         <div className="banner-bg-image bg_image bg_one-banner two ptb--120 ptb_md--80 ptb_sm--60">
                                             <div className="banner-one-inner-content">
                                                 <span className="pre">
-                                                    Get up to 30% off on your first $150 purchase
+                                                    Same-day delivery available for contractors in the metro area
                                                 </span>
                                                 <h1 className="title">
-                                                    Do not miss our amazing <br />
-                                                    grocery deals
+                                                    Quality materials <br />
+                                                    Delivered to your job site
                                                 </h1>
                                                 <a
                                                     href="/shop"
                                                     className="rts-btn btn-primary radious-sm with-icon"
                                                 >
-                                                    <div className="btn-text">Shop Now</div>
+                                                    <div className="btn-text">Get Quote</div>
                                                     <div className="arrow-icon">
                                                         <i className="fa-light fa-arrow-right"></i>
                                                     </div>

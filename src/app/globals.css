@@ -1,6 +1,14 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* Rawasy Construction Theme Colors */
+  --primary-color: #2C3C28;     /* Deep steel gray */
+  --secondary-color: #629D23;   /* Industrial blue */
+  --accent-color: #FFE884;      /* Safety yellow */
+  --text-primary: #2C3C28;
+  --text-secondary: #666666;
+  --border-color: #e5e5e5;
+  --surface: #f8f9fa;
 }
 
 @media (prefers-color-scheme: dark) {
