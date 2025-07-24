@@ -28,8 +28,8 @@ function FeatureOne() {
                                     </svg>
                                 </div>
                                 <div className="content">
-                                    <h4 className="title">Wide Assortment</h4>
-                                    <span>Orders $50 or more</span>
+                                    <h4 className="title">Bulk Pricing</h4>
+                                    <span>Save up to 25% on bulk orders</span>
                                 </div>
                             </div>
                         </div>
