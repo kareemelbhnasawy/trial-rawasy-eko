@@ -306,7 +306,7 @@ export default function Home() {
                                                             <img src="assets/images/vendor/04.svg" alt="vendor" />
                                                         </div>
                                                         <h3 className="title">
-                                                            Authentic Grocery <span className="closed">Closed</span>
+                                                            Construction Materials Pro <span className="closed">Closed</span>
                                                         </h3>
                                                         <div className="stars-area">
                                                             <i className="fa-solid fa-star" />
@@ -639,7 +639,7 @@ export default function Home() {
                                                         </div>
                                                         <div className="inner">
                                                             <h3 className="title">
-                                                                Authentic Grocery <span className="closed">Closed</span>
+                                                                Construction Materials Pro <span className="closed">Closed</span>
                                                             </h3>
                                                             <div className="stars-area">
                                                                 <i className="fa-solid fa-star" />
