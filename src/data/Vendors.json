@@ -1,0 +1,282 @@
+[
+    {
+        "id": 1,
+        "slug": "ezz-steel-company",
+        "name": "Ezz Steel Company",
+        "logo": "ezz-steel-logo.svg",
+        "banner": "ezz-steel-banner.jpg",
+        "category": "Steel & Metal",
+        "location": "Cairo, Egypt",
+        "establishedYear": 1999,
+        "rating": 4.8,
+        "reviewCount": 342,
+        "description": "Leading steel manufacturer in the Middle East, specializing in high-quality construction steel products including rebar, structural steel, and steel sheets.",
+        "specialties": ["Steel Rebar", "Structural Steel", "Steel Sheets", "Steel Coils"],
+        "certifications": ["ISO 9001", "ASTM A615", "European CE"],
+        "totalProducts": 156,
+        "yearsOfExperience": 25,
+        "deliveryAreas": ["Cairo", "Alexandria", "Giza", "All Egypt"],
+        "contactInfo": {
+            "phone": "+20 2 3333 4444",
+            "email": "sales@ezzsteel.com",
+            "website": "www.ezzsteel.com"
+        },
+        "businessHours": {
+            "weekdays": "8:00 AM - 6:00 PM",
+            "saturday": "8:00 AM - 2:00 PM",
+            "sunday": "Closed"
+        }
+    },
+    {
+        "id": 2,
+        "slug": "caterpillar-egypt",
+        "name": "Caterpillar Egypt",
+        "logo": "caterpillar-logo.svg",
+        "banner": "caterpillar-banner.jpg",
+        "category": "Heavy Equipment",
+        "location": "Industrial Zone, Cairo",
+        "establishedYear": 1975,
+        "rating": 4.9,
+        "reviewCount": 567,
+        "description": "Authorized Caterpillar dealer providing heavy construction equipment, machinery, and comprehensive support services.",
+        "specialties": ["Excavators", "Bulldozers", "Wheel Loaders", "Dump Trucks"],
+        "certifications": ["CAT Authorized Dealer", "ISO 14001", "OSHA Certified"],
+        "totalProducts": 89,
+        "yearsOfExperience": 49,
+        "deliveryAreas": ["All Egypt", "Sudan", "Libya"],
+        "contactInfo": {
+            "phone": "+20 2 2222 3333",
+            "email": "info@cat-egypt.com",
+            "website": "www.caterpillar-egypt.com"
+        },
+        "businessHours": {
+            "weekdays": "7:00 AM - 7:00 PM",
+            "saturday": "7:00 AM - 3:00 PM",
+            "sunday": "Emergency Service Only"
+        }
+    },
+    {
+        "id": 3,
+        "slug": "cemex-middle-east",
+        "name": "CEMEX Middle East",
+        "logo": "cemex-logo.svg",
+        "banner": "cemex-banner.jpg",
+        "category": "Building Materials",
+        "location": "New Cairo, Egypt",
+        "establishedYear": 1985,
+        "rating": 4.7,
+        "reviewCount": 678,
+        "description": "Global leader in cement and concrete solutions, providing high-quality building materials for construction projects of all sizes.",
+        "specialties": ["Portland Cement", "Ready-Mix Concrete", "Aggregates", "Concrete Blocks"],
+        "certifications": ["ASTM C150", "EN 197-1", "ISO 9001"],
+        "totalProducts": 234,
+        "yearsOfExperience": 39,
+        "deliveryAreas": ["Greater Cairo", "Delta Region", "Upper Egypt"],
+        "contactInfo": {
+            "phone": "+20 2 1111 2222",
+            "email": "sales@cemex-me.com",
+            "website": "www.cemex.com"
+        },
+        "businessHours": {
+            "weekdays": "6:00 AM - 8:00 PM",
+            "saturday": "6:00 AM - 4:00 PM",
+            "sunday": "Closed"
+        }
+    },
+    {
+        "id": 4,
+        "slug": "dewalt-middle-east",
+        "name": "DeWalt Middle East",
+        "logo": "dewalt-logo.svg",
+        "banner": "dewalt-banner.jpg",
+        "category": "Construction Tools",
+        "location": "6th October City, Egypt",
+        "establishedYear": 1992,
+        "rating": 4.6,
+        "reviewCount": 445,
+        "description": "Professional power tools and hand tools for construction and industrial applications. Trusted by contractors worldwide.",
+        "specialties": ["Power Tools", "Hand Tools", "Measuring Tools", "Safety Equipment"],
+        "certifications": ["UL Listed", "CE Certified", "ISO 9001"],
+        "totalProducts": 189,
+        "yearsOfExperience": 32,
+        "deliveryAreas": ["Egypt", "Saudi Arabia", "UAE", "Jordan"],
+        "contactInfo": {
+            "phone": "+20 2 3838 4848",
+            "email": "tools@dewalt-me.com",
+            "website": "www.dewalt.com"
+        },
+        "businessHours": {
+            "weekdays": "8:00 AM - 6:00 PM",
+            "saturday": "8:00 AM - 2:00 PM",
+            "sunday": "Closed"
+        }
+    },
+    {
+        "id": 5,
+        "slug": "3m-safety-solutions",
+        "name": "3M Safety Solutions",
+        "logo": "3m-logo.svg",
+        "banner": "3m-banner.jpg",
+        "category": "Safety Equipment",
+        "location": "Smart Village, Giza",
+        "establishedYear": 1998,
+        "rating": 4.8,
+        "reviewCount": 298,
+        "description": "Leading provider of personal protective equipment and safety solutions for construction and industrial environments.",
+        "specialties": ["Hard Hats", "Safety Goggles", "Protective Clothing", "Respiratory Protection"],
+        "certifications": ["ANSI Z89.1", "OSHA Compliant", "ISO 45001"],
+        "totalProducts": 167,
+        "yearsOfExperience": 26,
+        "deliveryAreas": ["Egypt", "Libya", "Sudan", "Ethiopia"],
+        "contactInfo": {
+            "phone": "+20 2 4545 6767",
+            "email": "safety@3m-egypt.com",
+            "website": "www.3m.com"
+        },
+        "businessHours": {
+            "weekdays": "8:00 AM - 5:00 PM",
+            "saturday": "8:00 AM - 1:00 PM",
+            "sunday": "Closed"
+        }
+    },
+    {
+        "id": 6,
+        "slug": "oldcastle-materials",
+        "name": "Oldcastle Materials Egypt",
+        "logo": "oldcastle-logo.svg",
+        "banner": "oldcastle-banner.jpg",
+        "category": "Building Materials",
+        "location": "Alexandria, Egypt",
+        "establishedYear": 2001,
+        "rating": 4.5,
+        "reviewCount": 389,
+        "description": "Major supplier of concrete products, masonry materials, and construction aggregates for residential and commercial projects.",
+        "specialties": ["Concrete Blocks", "Pavers", "Retaining Walls", "Aggregates"],
+        "certifications": ["ASTM C90", "AASHTO M194", "ISO 9001"],
+        "totalProducts": 145,
+        "yearsOfExperience": 23,
+        "deliveryAreas": ["Alexandria", "Beheira", "Matrouh", "Delta Region"],
+        "contactInfo": {
+            "phone": "+20 3 5555 6666",
+            "email": "info@oldcastle-egypt.com",
+            "website": "www.oldcastle.com"
+        },
+        "businessHours": {
+            "weekdays": "7:00 AM - 6:00 PM",
+            "saturday": "7:00 AM - 3:00 PM",
+            "sunday": "Closed"
+        }
+    },
+    {
+        "id": 7,
+        "slug": "southwire-electric",
+        "name": "Southwire Electric Egypt",
+        "logo": "southwire-logo.svg",
+        "banner": "southwire-banner.jpg",
+        "category": "Electrical Materials",
+        "location": "10th of Ramadan City",
+        "establishedYear": 1995,
+        "rating": 4.7,
+        "reviewCount": 234,
+        "description": "Leading manufacturer and supplier of electrical wires, cables, and electrical accessories for construction and industrial use.",
+        "specialties": ["Electrical Wires", "Power Cables", "Conduits", "Electrical Accessories"],
+        "certifications": ["UL Listed", "NEC Compliant", "IEC Standards"],
+        "totalProducts": 278,
+        "yearsOfExperience": 29,
+        "deliveryAreas": ["Cairo", "Alexandria", "Suez", "Industrial Cities"],
+        "contactInfo": {
+            "phone": "+20 15 7777 8888",
+            "email": "electric@southwire-egypt.com",
+            "website": "www.southwire.com"
+        },
+        "businessHours": {
+            "weekdays": "8:00 AM - 6:00 PM",
+            "saturday": "8:00 AM - 2:00 PM",
+            "sunday": "Closed"
+        }
+    },
+    {
+        "id": 8,
+        "slug": "georgia-pacific-lumber",
+        "name": "Georgia-Pacific Egypt",
+        "logo": "gp-logo.svg",
+        "banner": "gp-banner.jpg",
+        "category": "Wood & Lumber",
+        "location": "Port Said, Egypt",
+        "establishedYear": 2003,
+        "rating": 4.6,
+        "reviewCount": 156,
+        "description": "Premium lumber and engineered wood products for construction, including marine grade plywood and structural lumber.",
+        "specialties": ["Marine Plywood", "Structural Lumber", "OSB Panels", "Engineered Wood"],
+        "certifications": ["APA Certified", "FSC Certified", "CARB Compliant"],
+        "totalProducts": 98,
+        "yearsOfExperience": 21,
+        "deliveryAreas": ["Port Said", "Ismailia", "Suez", "Cairo"],
+        "contactInfo": {
+            "phone": "+20 66 9999 1010",
+            "email": "lumber@gp-egypt.com",
+            "website": "www.gp.com"
+        },
+        "businessHours": {
+            "weekdays": "7:00 AM - 5:00 PM",
+            "saturday": "7:00 AM - 1:00 PM",
+            "sunday": "Closed"
+        }
+    },
+    {
+        "id": 9,
+        "slug": "charlotte-pipe-plumbing",
+        "name": "Charlotte Pipe Egypt",
+        "logo": "charlotte-logo.svg",
+        "banner": "charlotte-banner.jpg",
+        "category": "Plumbing Supplies",
+        "location": "Borg El Arab, Alexandria",
+        "establishedYear": 2000,
+        "rating": 4.4,
+        "reviewCount": 267,
+        "description": "Complete plumbing solutions including PVC pipes, fittings, and plumbing accessories for residential and commercial construction.",
+        "specialties": ["PVC Pipes", "Pipe Fittings", "Drainage Systems", "Water Supply Systems"],
+        "certifications": ["ASTM D1785", "NSF 61", "ISO 9001"],
+        "totalProducts": 312,
+        "yearsOfExperience": 24,
+        "deliveryAreas": ["Alexandria", "Delta", "North Coast", "Cairo"],
+        "contactInfo": {
+            "phone": "+20 3 4444 5555",
+            "email": "plumbing@charlotte-egypt.com",
+            "website": "www.charlottepipe.com"
+        },
+        "businessHours": {
+            "weekdays": "8:00 AM - 6:00 PM",
+            "saturday": "8:00 AM - 2:00 PM",
+            "sunday": "Closed"
+        }
+    },
+    {
+        "id": 10,
+        "slug": "nucor-steel-egypt",
+        "name": "Nucor Steel Egypt",
+        "logo": "nucor-logo.svg",
+        "banner": "nucor-banner.jpg",
+        "category": "Steel & Metal",
+        "location": "Ain Sokhna, Red Sea",
+        "establishedYear": 2005,
+        "rating": 4.9,
+        "reviewCount": 423,
+        "description": "Advanced steel manufacturing facility producing high-quality structural steel, rebar, and specialty steel products for construction.",
+        "specialties": ["Structural Steel", "Steel Rebar", "Steel Beams", "Custom Fabrication"],
+        "certifications": ["ASTM A992", "AISC Certified", "ISO 9001"],
+        "totalProducts": 187,
+        "yearsOfExperience": 19,
+        "deliveryAreas": ["Red Sea", "Cairo", "Upper Egypt", "All Egypt"],
+        "contactInfo": {
+            "phone": "+20 62 1212 1313",
+            "email": "steel@nucor-egypt.com",
+            "website": "www.nucor.com"
+        },
+        "businessHours": {
+            "weekdays": "6:00 AM - 8:00 PM",
+            "saturday": "6:00 AM - 4:00 PM",
+            "sunday": "Emergency Service"
+        }
+    }
+]
