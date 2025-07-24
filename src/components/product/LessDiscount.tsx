@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 const products = [
   {
     id: 1,
-    img: '/assets/images/grocery/08.jpg',
+    img: '/assets/images/products/08.jpg',
     title: 'Pastine Mellin Filid Angelo 100% Di Grano Tenero',
     pack: '500g Pack',
     currentPrice: '$36.00',
@@ -18,7 +18,7 @@ const products = [
   },
   {
     id: 2,
-    img: '/assets/images/grocery/09.jpg',
+    img: '/assets/images/products/09.jpg',
     title: 'Pastine Mellin Filid Angelo 100% Di Grano Tenero',
     pack: '500g Pack',
     currentPrice: '$36.00',
@@ -26,7 +26,7 @@ const products = [
   },
   {
     id: 3,
-    img: '/assets/images/grocery/10.jpg',
+    img: '/assets/images/products/10.jpg',
     title: 'Pastine Mellin Filid Angelo 100% Di Grano Tenero',
     pack: '500g Pack',
     currentPrice: '$36.00',
@@ -34,7 +34,7 @@ const products = [
   },
   {
     id: 4,
-    img: '/assets/images/grocery/11.jpg',
+    img: '/assets/images/products/11.jpg',
     title: 'Pastine Mellin Filid Angelo 100% Di Grano Tenero',
     pack: '500g Pack',
     currentPrice: '$36.00',
@@ -42,7 +42,7 @@ const products = [
   },
   {
     id: 5,
-    img: '/assets/images/grocery/12.jpg',
+    img: '/assets/images/products/12.jpg',
     title: 'Pastine Mellin Filid Angelo 100% Di Grano Tenero',
     pack: '500g Pack',
     currentPrice: '$36.00',
@@ -50,7 +50,7 @@ const products = [
   },
   {
     id: 6,
-    img: '/assets/images/grocery/13.jpg',
+    img: '/assets/images/products/13.jpg',
     title: 'Pastine Mellin Filid Angelo 100% Di Grano Tenero',
     pack: '500g Pack',
     currentPrice: '$36.00',
