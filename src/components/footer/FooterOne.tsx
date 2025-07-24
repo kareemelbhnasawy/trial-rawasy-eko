@@ -44,23 +44,23 @@ function FooterOne() {
                                 {/* single footer area wrapper */}
                                 {/* single footer area wrapper */}
                                 <div className="single-footer-wized">
-                                    <h3 className="footer-title">Our Stores</h3>
+                                    <h3 className="footer-title">Our Services</h3>
                                     <div className="footer-nav">
                                         <ul>
                                             <li>
-                                                <a href="#">Delivery Information</a>
+                                                <a href="#">Job Site Delivery</a>
                                             </li>
                                             <li>
-                                                <a href="#">Privacy Policy</a>
+                                                <a href="#">Bulk Order Discounts</a>
                                             </li>
                                             <li>
-                                                <a href="#">Terms &amp; Conditions</a>
+                                                <a href="#">Material Estimation</a>
                                             </li>
                                             <li>
-                                                <a href="#">Support Center</a>
+                                                <a href="#">Technical Support</a>
                                             </li>
                                             <li>
-                                                <a href="#">Careers</a>
+                                                <a href="#">Equipment Rental</a>
                                             </li>
                                         </ul>
                                     </div>
