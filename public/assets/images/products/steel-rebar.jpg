@@ -1,0 +1,43 @@
+<!-- Steel Rebar Product Image -->
+<svg width="300" height="400" viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="400" fill="#f0f0f0"/>
+  
+  <!-- Rebar bundles -->
+  <g>
+    <!-- Individual rebar pieces -->
+    <rect x="30" y="50" width="240" height="8" rx="4" fill="#4A4A4A"/>
+    <rect x="30" y="70" width="240" height="8" rx="4" fill="#555555"/>
+    <rect x="30" y="90" width="240" height="8" rx="4" fill="#4A4A4A"/>
+    <rect x="30" y="110" width="240" height="8" rx="4" fill="#555555"/>
+    <rect x="30" y="130" width="240" height="8" rx="4" fill="#4A4A4A"/>
+    
+    <!-- Ribbed texture lines -->
+    <g stroke="#333" stroke-width="1">
+      <line x1="40" y1="50" x2="40" y2="138"/>
+      <line x1="60" y1="50" x2="60" y2="138"/>
+      <line x1="80" y1="50" x2="80" y2="138"/>
+      <line x1="100" y1="50" x2="100" y2="138"/>
+      <line x1="120" y1="50" x2="120" y2="138"/>
+      <line x1="140" y1="50" x2="140" y2="138"/>
+      <line x1="160" y1="50" x2="160" y2="138"/>
+    </g>
+  </g>
+  
+  <!-- Product info -->
+  <rect x="50" y="170" width="200" height="180" fill="white" stroke="#ddd" stroke-width="2" rx="10"/>
+  <text x="150" y="195" font-family="Arial" font-size="20" font-weight="bold" fill="#2C3C28" text-anchor="middle">Steel Rebar Grade 60</text>
+  <text x="150" y="215" font-family="Arial" font-size="16" fill="#629D23" text-anchor="middle">#4 (1/2") x 20 ft</text>
+  
+  <text x="60" y="240" font-family="Arial" font-size="12" fill="#333">• ASTM A615 Grade 60</text>
+  <text x="60" y="255" font-family="Arial" font-size="12" fill="#333">• Yield Strength: 60,000 psi</text>
+  <text x="60" y="270" font-family="Arial" font-size="12" fill="#333">• Deformed surface</text>
+  <text x="60" y="285" font-family="Arial" font-size="12" fill="#333">• Weight: 2.67 lbs/ft</text>
+  <text x="60" y="300" font-family="Arial" font-size="12" fill="#333">• Made in USA</text>
+  
+  <rect x="60" y="315" width="180" height="25" fill="#FFE884" rx="5"/>
+  <text x="150" y="330" font-family="Arial" font-size="14" font-weight="bold" fill="#2C3C28" text-anchor="middle">$8.75 per piece</text>
+  
+  <!-- Brand badge -->
+  <circle cx="250" cy="100" r="20" fill="#629D23"/>
+  <text x="250" y="105" font-family="Arial" font-size="10" font-weight="bold" fill="white" text-anchor="middle">NUCOR</text>
+</svg>
