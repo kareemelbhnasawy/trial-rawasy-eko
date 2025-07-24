@@ -26,7 +26,7 @@ const CompareElements: React.FC = () => {
   const handleAdd = () => {
     addToCart({
       id: Date.now(),
-      image: `/assets/images/grocery/${blogPost.bannerImg}`,
+      image: `/assets/images/products/${blogPost.bannerImg}`,
       title: blogPost.title ?? 'Default Product Title',
       price: parseFloat(blogPost.price ?? '0'),
       quantity: 1,
