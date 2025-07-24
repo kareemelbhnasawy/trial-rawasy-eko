@@ -55,7 +55,7 @@ const WeeklyBestSelling: React.FC = () => {
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="title-area-between">
-                                    <h2 className="title-left">Weekly Best Selling Groceries</h2>
+                                    <h2 className="title-left">Top Construction Materials</h2>
                                     <ul
                                         className="nav nav-tabs best-selling-grocery"
                                         id="myTab"
@@ -66,7 +66,7 @@ const WeeklyBestSelling: React.FC = () => {
                                                 onClick={() => setActiveTab('tab1')}
                                                 className={`nav-link ${activeTab === 'tab1' ? 'active' : ''}`}
                                             >
-                                                Frozen Foods
+                                                Building Materials
                                             </button>
                                         </li>
                                         <li className="nav-item" role="presentation">
@@ -74,7 +74,7 @@ const WeeklyBestSelling: React.FC = () => {
                                                 onClick={() => setActiveTab('tab2')}
                                                 className={`nav-link ${activeTab === 'tab2' ? 'active' : ''}`}
                                             >
-                                                Diet Foods
+                                                Tools & Equipment
                                             </button>
                                         </li>
                                         <li className="nav-item" role="presentation">
@@ -82,7 +82,7 @@ const WeeklyBestSelling: React.FC = () => {
                                                 onClick={() => setActiveTab('tab3')}
                                                 className={`nav-link ${activeTab === 'tab3' ? 'active' : ''}`}
                                             >
-                                                Healthy Foods
+                                                Safety Equipment
                                             </button>
                                         </li>
                                         <li className="nav-item" role="presentation">
@@ -90,7 +90,7 @@ const WeeklyBestSelling: React.FC = () => {
                                                 onClick={() => setActiveTab('tab4')}
                                                 className={`nav-link ${activeTab === 'tab4' ? 'active' : ''}`}
                                             >
-                                                Vitamin Items
+                                                Electrical & Plumbing
                                             </button>
                                         </li>
                                     </ul>
