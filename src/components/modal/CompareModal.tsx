@@ -24,17 +24,17 @@ const ModalComponent: React.FC<ModalProps> = ({ show, handleClose }) => {
                         <div className="single-compare-elements name">Preview</div>
                         <div className="single-compare-elements">
                             <div className="thumbnail-preview">
-                                <img src="/assets/images/grocery/01.jpg" alt="grocery" />
+                                <img src="/assets/images/products/cement-bag.jpg" alt="construction materials" />
                             </div>
                         </div>
                         <div className="single-compare-elements">
                             <div className="thumbnail-preview">
-                                <img src="/assets/images/grocery/02.jpg" alt="grocery" />
+                                <img src="/assets/images/products/steel-rebar.jpg" alt="construction materials" />
                             </div>
                         </div>
                         <div className="single-compare-elements">
                             <div className="thumbnail-preview">
-                                <img src="/assets/images/grocery/03.jpg" alt="grocery" />
+                                <img src="/assets/images/products/marine-plywood.jpg" alt="construction materials" />
                             </div>
                         </div>
                     </div>
