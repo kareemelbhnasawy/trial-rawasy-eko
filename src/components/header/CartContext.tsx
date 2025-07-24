@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import React, { createContext, useContext, useEffect, useState } from "react";
 
 interface CartItem {
   id: number;
@@ -24,7 +24,7 @@ const CartContext = createContext<CartContextProps | undefined>(undefined);
 
 export const useCart = () => {
   const context = useContext(CartContext);
-  if (!context) throw new Error('useCart must be used within a CartProvider');
+  if (!context) throw new Error("useCart must be used within a CartProvider");
   return context;
 };
 
@@ -34,13 +34,13 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
 
   // Load from localStorage on first mount
   useEffect(() => {
-    const storedCart = localStorage.getItem('cart');
+    const storedCart = localStorage.getItem("cart");
     if (storedCart) {
       try {
         setCartItems(JSON.parse(storedCart));
       } catch (error) {
-        console.error('Failed to parse cart from localStorage:', error);
-        localStorage.removeItem('cart');
+        console.error("Failed to parse cart from localStorage:", error);
+        localStorage.removeItem("cart");
       }
     }
     setIsCartLoaded(true);
@@ -49,14 +49,17 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
   // Save to localStorage whenever cart changes
   useEffect(() => {
     if (isCartLoaded) {
-      localStorage.setItem('cart', JSON.stringify(cartItems));
+      localStorage.setItem("cart", JSON.stringify(cartItems));
     }
   }, [cartItems, isCartLoaded]);
 
   // Add item to cart (active: true)
   const addToCart = (item: CartItem) => {
     setCartItems((prev) => {
-      const existing = prev.find((i) => i.id === item.id && i.active === true);
+      const existing =
+        prev.length > 0
+          ? prev.find((i) => i.id === item.id && i.active === true)
+          : undefined;
       if (existing) {
         return prev.map((i) =>
           i.id === item.id && i.active === true
@@ -64,7 +67,11 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
             : i
         );
       } else {
-        return [...prev, item];
+        if (prev.length > 0) {
+          return [...prev, item];
+        } else {
+          return [item];
+        }
       }
     });
   };
@@ -72,7 +79,10 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
   // Add item to wishlist (active: false)
   const addToWishlist = (item: CartItem) => {
     setCartItems((prev) => {
-      const existing = prev.find((i) => i.id === item.id && i.active === false);
+      const existing =
+        prev.length > 0
+          ? prev.find((i) => i.id === item.id && i.active === false)
+          : undefined;
       if (existing) {
         return prev.map((i) =>
           i.id === item.id && i.active === false
@@ -80,7 +90,11 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
             : i
         );
       } else {
-        return [...prev, item];
+        if (prev.length > 0) {
+          return [...prev, item];
+        } else {
+          return [item];
+        }
       }
     });
   };
