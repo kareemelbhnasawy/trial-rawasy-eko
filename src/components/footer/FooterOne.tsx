@@ -72,19 +72,19 @@ function FooterOne() {
                                     <div className="footer-nav">
                                         <ul>
                                             <li>
-                                                <a href="#">Contact Us</a>
+                                                <a href="#">Building Materials</a>
                                             </li>
                                             <li>
-                                                <a href="#">Information</a>
+                                                <a href="#">Construction Tools</a>
                                             </li>
                                             <li>
-                                                <a href="#">About Us</a>
+                                                <a href="#">Heavy Equipment</a>
                                             </li>
                                             <li>
-                                                <a href="#">Careers</a>
+                                                <a href="#">Safety Equipment</a>
                                             </li>
                                             <li>
-                                                <a href="#">Nest Stories</a>
+                                                <a href="#">Electrical & Plumbing</a>
                                             </li>
                                         </ul>
                                     </div>
