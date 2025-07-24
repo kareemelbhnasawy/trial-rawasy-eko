@@ -32,6 +32,36 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Arabic RTL Support */
+[dir="rtl"] {
+  text-align: right;
+  font-family: 'Cairo', Arial, sans-serif;
+}
+
+.arabic-text {
+  font-family: 'Cairo', Arial, sans-serif;
+  direction: rtl;
+  text-align: right;
+}
+
+.rtl-flex {
+  flex-direction: row-reverse;
+}
+
+.rtl-margin-left {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.rtl-margin-right {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.rtl-text-align {
+  text-align: right;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
