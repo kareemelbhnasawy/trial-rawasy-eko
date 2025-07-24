@@ -209,7 +209,7 @@ const BlogGridMain: React.FC<BlogGridMainProps> = ({
       <ProductDetails
         show={activeModal === 'two'}
         handleClose={handleClose}
-        productImage={`/assets/images/grocery/${ProductImage}`}
+        productImage={`/assets/images/products/${ProductImage}`}
         productTitle={ProductTitle ?? 'Default Product Title'}
         productPrice={Price ?? '0'}
       />
