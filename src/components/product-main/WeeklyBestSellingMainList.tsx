@@ -38,7 +38,7 @@ const BlogGridMain: React.FC<BlogGridMainProps> = ({
     const handleAdd = () => {
         addToCart({
             id: Date.now(), // unique ID
-            image: `/assets/images/grocery/${ProductImage}`,
+            image: `/assets/images/products/${ProductImage}`,
             title: ProductTitle ?? 'Default Product Title',
             price: parseFloat(Price ?? '0'),
             quantity: 1,
@@ -50,7 +50,7 @@ const BlogGridMain: React.FC<BlogGridMainProps> = ({
     const handleWishlist = () => {
         addToWishlist({
             id: Date.now(),
-            image: `/assets/images/grocery/${ProductImage}`,
+            image: `/assets/images/products/${ProductImage}`,
             title: ProductTitle ?? 'Default Product Title',
             price: parseFloat(Price ?? '0'),
             quantity: 1,
@@ -72,7 +72,7 @@ const BlogGridMain: React.FC<BlogGridMainProps> = ({
                         </span>
                         <i className="fa-solid fa-bookmark" />
                     </div>
-                    <img src={`/assets/images/grocery/${ProductImage}`} alt="grocery" />
+                    <img src={`/assets/images/products/${ProductImage}`} alt="construction materials" />
                 </a>
                 <div className="action-share-option">
                     <span
