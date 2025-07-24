@@ -38,7 +38,7 @@ const BlogGridMain: React.FC<BlogGridMainProps> = ({
   const handleAdd = () => {
     addToCart({
       id: Date.now(),
-      image: `/assets/images/grocery/${ProductImage}`,
+      image: `/assets/images/products/${ProductImage}`,
       title: ProductTitle ?? 'Default Product Title',
       price: parseFloat(Price ?? '0'),
       quantity: 1,
@@ -51,7 +51,7 @@ const BlogGridMain: React.FC<BlogGridMainProps> = ({
   const handleWishlist = () => {
     addToWishlist({
       id: Date.now(),
-      image: `/assets/images/grocery/${ProductImage}`,
+      image: `/assets/images/products/${ProductImage}`,
       title: ProductTitle ?? 'Default Product Title',
       price: parseFloat(Price ?? '0'),
       quantity: 1,
@@ -62,7 +62,7 @@ const BlogGridMain: React.FC<BlogGridMainProps> = ({
 
   const handleCompare = () => {
     addToCompare({
-      image: `/assets/images/grocery/${ProductImage}`,
+      image: `/assets/images/products/${ProductImage}`,
       name: ProductTitle ?? 'Default Product Title',
       price: Price ?? '0',
       description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
