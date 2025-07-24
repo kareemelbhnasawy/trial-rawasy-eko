@@ -11,17 +11,17 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const categories = [
-  { img: "/assets/images/category/01.png", name: "Organic Vegetable" },
-  { img: "/assets/images/category/02.png", name: "Organic Vegetable" },
-  { img: "/assets/images/category/03.png", name: "Organic Vegetable" },
-  { img: "/assets/images/category/04.png", name: "Organic Vegetable" },
-  { img: "/assets/images/category/05.png", name: "Organic Vegetable" },
-  { img: "/assets/images/category/06.png", name: "Organic Vegetable" },
-  { img: "/assets/images/category/07.png", name: "Organic Vegetable" },
-  { img: "/assets/images/category/08.png", name: "Organic Vegetable" },
-  { img: "/assets/images/category/09.png", name: "Organic Vegetable" },
-  { img: "/assets/images/category/10.png", name: "Organic Vegetable" },
-  { img: "/assets/images/category/06.png", name: "Organic Vegetable" },
+  { img: "/assets/images/icons/01.svg", name: "Building Materials" },
+  { img: "/assets/images/icons/02.svg", name: "Construction Tools" },
+  { img: "/assets/images/icons/03.svg", name: "Heavy Equipment" },
+  { img: "/assets/images/icons/04.svg", name: "Electrical Materials" },
+  { img: "/assets/images/icons/05.svg", name: "Plumbing Supplies" },
+  { img: "/assets/images/icons/06.svg", name: "Wood & Lumber" },
+  { img: "/assets/images/icons/07.svg", name: "Safety Equipment" },
+  { img: "/assets/images/icons/08.svg", name: "Roofing Materials" },
+  { img: "/assets/images/icons/09.svg", name: "Insulation & Flooring" },
+  { img: "/assets/images/icons/10.svg", name: "Hardware & Fasteners" },
+  { img: "/assets/images/icons/01.svg", name: "Building Materials" },
 ];
 
 function CategoryBannerBottom() {
