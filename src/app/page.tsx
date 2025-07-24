@@ -25,6 +25,7 @@ export default function Home() {
           <BannerOne />
           <FeatureOne />
           <FeatureProduct />
+          <BulkOrderCalculator />
           <DiscountProduct />
           <WeeklyBestSelling />
           <FeatureDiscount />
