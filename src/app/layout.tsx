@@ -2,9 +2,6 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
-import "../../../public/assets/css/bootstrap.min.css"
-import "../../../public/assets/css/plugins.css"
-import "../../../public/assets/css/style.css"
 import { CartProvider } from "@/components/header/CartContext"
 import { WishlistProvider } from "@/components/header/WishlistContext"
 import { CompareProvider } from "@/components/header/CompareContext"
@@ -45,6 +42,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" dir="ltr">
+      <head>
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/assets/css/plugins.css" />
+        <link rel="stylesheet" href="/assets/css/style.css" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <CartProvider>
           <WishlistProvider>
