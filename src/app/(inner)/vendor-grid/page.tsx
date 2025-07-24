@@ -24,8 +24,8 @@ export default function Home() {
                                 <div className="navigator-breadcrumb-wrapper">
                                     <a href="/">Home</a>
                                     <i className="fa-regular fa-chevron-right" />
-                                    <a className="current" href="/shop">
-                                        Vendor Grid
+                                    <a className="current" href="/vendor-grid">
+                                        Construction Suppliers
                                     </a>
                                 </div>
                             </div>
