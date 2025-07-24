@@ -122,8 +122,8 @@ const BlogGridMain: React.FC<BlogGridMainProps> = ({
         <a href={`/shop/${Slug}`} className="thumbnail-preview">
           <div className="badge">
             <span>
-              25% <br />
-              Off
+              Bulk <br />
+              Save
             </span>
             <i className="fa-solid fa-bookmark" />
           </div>
