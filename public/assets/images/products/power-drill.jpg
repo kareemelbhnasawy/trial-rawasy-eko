@@ -1,0 +1,77 @@
+<!-- Power Drill Product Image -->
+<svg width="300" height="400" viewBox="0 0 300 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="400" fill="#f0f0f0"/>
+  
+  <!-- Drill body -->
+  <g>
+    <!-- Main body -->
+    <rect x="80" y="160" width="140" height="60" rx="8" fill="#FFE884"/>
+    <rect x="85" y="165" width="130" height="50" rx="6" fill="#FFD700"/>
+    
+    <!-- Grip handle -->
+    <rect x="90" y="180" width="30" height="80" rx="15" fill="#2C3C28"/>
+    <rect x="95" y="185" width="20" height="70" rx="10" fill="#333333"/>
+    
+    <!-- Chuck and drill bit -->
+    <circle cx="235" cy="190" r="12" fill="#C0C0C0"/>
+    <circle cx="235" cy="190" r="8" fill="#808080"/>
+    <rect x="247" y="188" width="20" height="4" fill="#606060"/>
+    
+    <!-- Trigger -->
+    <path d="M95 200 Q85 205 95 210" fill="#FF6B35"/>
+    
+    <!-- Side vents -->
+    <rect x="140" y="170" width="2" height="8" fill="#2C3C28"/>
+    <rect x="144" y="170" width="2" height="8" fill="#2C3C28"/>
+    <rect x="148" y="170" width="2" height="8" fill="#2C3C28"/>
+    <rect x="152" y="170" width="2" height="8" fill="#2C3C28"/>
+    
+    <!-- LED light -->
+    <circle cx="210" cy="175" r="3" fill="#FFFFFF"/>
+    
+    <!-- Battery -->
+    <rect x="80" y="240" width="50" height="40" rx="5" fill="#2C3C28"/>
+    <rect x="85" y="245" width="40" height="30" rx="3" fill="#4A4A4A"/>
+    <text x="105" y="258" font-family="Arial" font-size="8" font-weight="bold" fill="#FFE884" text-anchor="middle">18V</text>
+    <text x="105" y="268" font-family="Arial" font-size="6" fill="#FFE884" text-anchor="middle">Li-Ion</text>
+  </g>
+  
+  <!-- Product info -->
+  <rect x="30" y="50" width="240" height="90" fill="white" stroke="#ddd" stroke-width="2" rx="8"/>
+  <text x="150" y="75" font-family="Arial" font-size="18" font-weight="bold" fill="#2C3C28" text-anchor="middle">Cordless Drill Driver</text>
+  <text x="150" y="95" font-family="Arial" font-size="14" fill="#629D23" text-anchor="middle">18V Li-Ion Kit</text>
+  <text x="150" y="110" font-family="Arial" font-size="12" fill="#666" text-anchor="middle">Brushless Motor • 15 Torque Settings</text>
+  <text x="150" y="125" font-family="Arial" font-size="10" fill="#666" text-anchor="middle">1/2" Chuck • 3.5 lbs • Includes 2 Batteries</text>
+  
+  <!-- Kit contents -->
+  <rect x="40" y="300" width="220" height="70" fill="#f8f9fa" stroke="#e5e5e5" stroke-width="1" rx="5"/>
+  <text x="60" y="320" font-family="Arial" font-size="12" font-weight="bold" fill="#2C3C28">Kit Includes:</text>
+  <text x="60" y="335" font-family="Arial" font-size="10" fill="#333">• (1) 18V Brushless Drill Driver</text>
+  <text x="60" y="348" font-family="Arial" font-size="10" fill="#333">• (2) 18V 2.0Ah Lithium-Ion Batteries</text>
+  <text x="60" y="361" font-family="Arial" font-size="10" fill="#333">• (1) Fast Charger • Carrying Case</text>
+  
+  <!-- Additional batteries -->
+  <rect x="150" y="240" width="40" height="30" rx="3" fill="#2C3C28"/>
+  <text x="170" y="253" font-family="Arial" font-size="7" font-weight="bold" fill="#FFE884" text-anchor="middle">18V</text>
+  <text x="170" y="262" font-family="Arial" font-size="5" fill="#FFE884" text-anchor="middle">BACKUP</text>
+  
+  <!-- Charger -->
+  <rect x="200" y="240" width="60" height="35" rx="5" fill="#2C3C28"/>
+  <rect x="205" y="245" width="50" height="25" rx="3" fill="#4A4A4A"/>
+  <circle cx="215" cy="255" r="2" fill="#00FF00"/>
+  <text x="235" y="260" font-family="Arial" font-size="6" fill="#FFE884">CHARGER</text>
+  
+  <!-- Price -->
+  <circle cx="80" cy="380" r="30" fill="#FF6B35"/>
+  <text x="80" y="376" font-family="Arial" font-size="12" font-weight="bold" fill="white" text-anchor="middle">$189.99</text>
+  <text x="80" y="388" font-family="Arial" font-size="8" fill="white" text-anchor="middle">per kit</text>
+  
+  <!-- Brand -->
+  <rect x="160" y="365" width="60" height="20" fill="#FFE884" stroke="#2C3C28" stroke-width="2" rx="3"/>
+  <text x="190" y="377" font-family="Arial" font-size="12" font-weight="bold" fill="#2C3C28" text-anchor="middle">DEWALT</text>
+  
+  <!-- UL Listed badge -->
+  <circle cx="240" cy="380" r="15" fill="#629D23"/>
+  <text x="240" y="378" font-family="Arial" font-size="6" font-weight="bold" fill="white" text-anchor="middle">UL</text>
+  <text x="240" y="385" font-family="Arial" font-size="6" fill="white" text-anchor="middle">LISTED</text>
+</svg>
