@@ -72,27 +72,26 @@ function HeaderOne() {
     const inputRef = useRef<HTMLInputElement>(null);
 
     const allSuggestions = [
-        "Profitable business makes your profit Best Solution",
-        "Details Profitable business makes your profit",
-        "One Profitable business makes your profit",
-        "Me Profitable business makes your profit",
-        "Details business makes your profit",
-        "Firebase business makes your profit",
-        "Netlyfy business makes your profit",
-        "Profitable business makes your profit",
-        "Valuable business makes your profit",
-        "System business makes your profit",
-        "Profitables business makes your profit",
-        "Content business makes your profit",
-        "Dalivaring business makes your profit",
-        "Staning business makes your profit",
-        "Best business makes your profit",
-        "cooler business makes your profit",
-        "Best-one Profitable business makes your profit",
-        "Super Fresh Meat",
-        "Original Fresh frut",
-        "Organic Fresh frut",
-        "Lite Fresh frut"
+        "Cement Portland Type I",
+        "Steel Rebar Grade 60",
+        "Plywood Marine Grade",
+        "Concrete Blocks 8 inch",
+        "Safety Helmets ANSI Z89.1",
+        "PVC Pipes Schedule 40",
+        "Electrical Wire 12 AWG",
+        "Construction Tools Power",
+        "Heavy Equipment Rental",
+        "Building Materials Bulk",
+        "Industrial Fasteners Stainless",
+        "Roofing Materials Metal",
+        "Insulation Fiberglass Rolls",
+        "Lumber Treated 2x4",
+        "Concrete Admixtures",
+        "Welding Supplies Professional",
+        "Excavator Parts Caterpillar",
+        "Structural Steel Beams",
+        "Brick Common Clay",
+        "Asphalt Shingles Architectural"
     ];
 
     useEffect(() => {
@@ -145,7 +144,7 @@ function HeaderOne() {
                                 <div className="bwtween-area-header-top">
                                     <div className="discount-area">
                                         <p className="disc">
-                                            FREE delivery &amp; 40% Discount for next 3 orders! Place your 1st order in.
+                                            FREE delivery on bulk orders &amp; 15% Discount for construction contractors! Place your order today.
                                         </p>
                                         <div className="countdown">
                                             <div className="countDown">10/05/2025 10:20:00</div>
@@ -172,7 +171,7 @@ function HeaderOne() {
                                             <li><a href="/account">My Account</a></li>
                                             <li><a href="/wishlist">Wishlist</a></li>
                                         </ul>
-                                        <p className="para">We deliver to your everyday from 7:00 to 22:00</p>
+                                        <p className="para">Construction materials delivered to your site 6:00 to 18:00</p>
                                     </div>
                                     <div className="nav-sm-left">
                                         <ul className="nav-h_top language">
@@ -220,7 +219,7 @@ function HeaderOne() {
                                             <input
                                                 ref={inputRef}
                                                 type="text"
-                                                placeholder="Search for products, categories or brands"
+                                                placeholder="Search for construction materials, tools, equipment..."
                                                 required
                                                 value={searchTerm}
                                                 onChange={(e) => setSearchTerm(e.target.value)}
