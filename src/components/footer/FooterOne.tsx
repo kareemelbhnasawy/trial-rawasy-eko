@@ -11,32 +11,32 @@ function FooterOne() {
                             <div className="footer-main-content-wrapper pb--70 pb_sm--30">
                                 {/* single footer area wrapper */}
                                 <div className="single-footer-wized">
-                                    <h3 className="footer-title">About Company</h3>
+                                    <h3 className="footer-title">About Rawasy</h3>
                                     <div className="call-area">
                                         <div className="icon">
                                             <i className="fa-solid fa-phone-rotary" />
                                         </div>
                                         <div className="info">
-                                            <span>Have Question? Call Us 24/7</span>
+                                            <span>Construction Materials Hotline 24/7</span>
                                             <a href="#" className="number">
-                                                +258 3692 2569
+                                                +20 2 3333 4444
                                             </a>
                                         </div>
                                     </div>
                                     <div className="opening-hour">
                                         <div className="single">
                                             <p>
-                                                Monday - Friday: <span>8:00am - 6:00pm</span>
+                                                Monday - Friday: <span>6:00am - 8:00pm</span>
                                             </p>
                                         </div>
                                         <div className="single">
                                             <p>
-                                                Saturday: <span>8:00am - 6:00pm</span>
+                                                Saturday: <span>6:00am - 4:00pm</span>
                                             </p>
                                         </div>
                                         <div className="single">
                                             <p>
-                                                Sunday: <span>Service Close</span>
+                                                Sunday: <span>Emergency Service</span>
                                             </p>
                                         </div>
                                     </div>
