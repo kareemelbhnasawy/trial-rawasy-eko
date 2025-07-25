@@ -122,6 +122,7 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
         addToWishlist,
         removeFromCart,
         updateItemQuantity,
+        setCartItems,
         isCartLoaded,
       }}
     >
