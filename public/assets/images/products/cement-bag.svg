@@ -1,0 +1,76 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cementGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E5E7EB;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#9CA3AF;stop-opacity:1"/>
+    </linearGradient>
+    <pattern id="cementTexture" patternUnits="userSpaceOnUse" width="4" height="4">
+      <rect width="4" height="4" fill="#F3F4F6"/>
+      <circle cx="2" cy="2" r="0.5" fill="#D1D5DB"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="300" fill="#F9FAFB"/>
+  
+  <!-- Cement bag shadow -->
+  <ellipse cx="150" cy="280" rx="80" ry="12" fill="#000000" opacity="0.1"/>
+  
+  <!-- Main cement bag -->
+  <rect x="75" y="80" width="150" height="200" rx="8" fill="url(#cementGradient)" stroke="#6B7280" stroke-width="2"/>
+  
+  <!-- Bag texture -->
+  <rect x="80" y="85" width="140" height="190" rx="6" fill="url(#cementTexture)" opacity="0.3"/>
+  
+  <!-- Top fold/closure -->
+  <rect x="75" y="80" width="150" height="25" rx="8" fill="#374151"/>
+  <rect x="90" y="85" width="120" height="15" rx="4" fill="#4B5563"/>
+  
+  <!-- CEMEX Logo area -->
+  <rect x="90" y="120" width="120" height="40" rx="4" fill="#1E3A8A"/>
+  <text x="150" y="140" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">CEMEX</text>
+  <text x="150" y="155" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">PORTLAND CEMENT</text>
+  
+  <!-- Product specifications -->
+  <rect x="90" y="170" width="120" height="60" rx="4" fill="white" stroke="#D1D5DB"/>
+  <text x="150" y="185" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="12" font-weight="bold">TYPE I</text>
+  <text x="150" y="200" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="10">94 LB BAG</text>
+  <text x="150" y="215" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="9">ASTM C150</text>
+  <text x="150" y="227" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="9">NET WT 94 LBS (42.6 KG)</text>
+  
+  <!-- Barcode area -->
+  <rect x="95" y="240" width="110" height="25" rx="2" fill="white" stroke="#D1D5DB"/>
+  <g transform="translate(100, 245)">
+    <rect x="0" y="0" width="1" height="15" fill="black"/>
+    <rect x="3" y="0" width="2" height="15" fill="black"/>
+    <rect x="7" y="0" width="1" height="15" fill="black"/>
+    <rect x="10" y="0" width="3" height="15" fill="black"/>
+    <rect x="15" y="0" width="1" height="15" fill="black"/>
+    <rect x="18" y="0" width="2" height="15" fill="black"/>
+    <rect x="22" y="0" width="1" height="15" fill="black"/>
+    <rect x="25" y="0" width="3" height="15" fill="black"/>
+    <rect x="30" y="0" width="2" height="15" fill="black"/>
+    <rect x="34" y="0" width="1" height="15" fill="black"/>
+    <rect x="37" y="0" width="3" height="15" fill="black"/>
+    <rect x="42" y="0" width="1" height="15" fill="black"/>
+    <rect x="45" y="0" width="2" height="15" fill="black"/>
+    <rect x="49" y="0" width="1" height="15" fill="black"/>
+    <rect x="52" y="0" width="3" height="15" fill="black"/>
+    <rect x="57" y="0" width="1" height="15" fill="black"/>
+    <rect x="60" y="0" width="2" height="15" fill="black"/>
+    <rect x="64" y="0" width="1" height="15" fill="black"/>
+    <rect x="67" y="0" width="3" height="15" fill="black"/>
+    <rect x="72" y="0" width="2" height="15" fill="black"/>
+    <rect x="76" y="0" width="1" height="15" fill="black"/>
+    <rect x="79" y="0" width="3" height="15" fill="black"/>
+    <rect x="84" y="0" width="1" height="15" fill="black"/>
+    <rect x="87" y="0" width="2" height="15" fill="black"/>
+    <rect x="91" y="0" width="1" height="15" fill="black"/>
+    <rect x="94" y="0" width="3" height="15" fill="black"/>
+    <rect x="99" y="0" width="1" height="15" fill="black"/>
+  </g>
+  
+  <!-- Stitching details -->
+  <line x1="75" y1="90" x2="225" y2="90" stroke="#4B5563" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="75" y1="270" x2="225" y2="270" stroke="#4B5563" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

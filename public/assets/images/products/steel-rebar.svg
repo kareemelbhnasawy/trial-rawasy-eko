@@ -1,0 +1,146 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="steelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B7280;stop-opacity:1"/>
+      <stop offset="50%" style="stop-color:#374151;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1F2937;stop-opacity:1"/>
+    </linearGradient>
+    <pattern id="ribPattern" patternUnits="userSpaceOnUse" width="8" height="3">
+      <rect width="8" height="3" fill="#374151"/>
+      <rect x="1" y="0" width="6" height="1" fill="#4B5563"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="300" fill="#F9FAFB"/>
+  
+  <!-- Multiple rebar bars arranged -->
+  <!-- Main rebar bar 1 -->
+  <g transform="translate(20, 40) rotate(15)">
+    <rect x="0" y="0" width="280" height="12" rx="6" fill="url(#steelGradient)"/>
+    <rect x="0" y="0" width="280" height="12" rx="6" fill="url(#ribPattern)" opacity="0.6"/>
+    <!-- Ribs/deformations -->
+    <g fill="#4B5563">
+      <rect x="20" y="2" width="2" height="8" rx="1"/>
+      <rect x="30" y="2" width="2" height="8" rx="1"/>
+      <rect x="40" y="2" width="2" height="8" rx="1"/>
+      <rect x="50" y="2" width="2" height="8" rx="1"/>
+      <rect x="60" y="2" width="2" height="8" rx="1"/>
+      <rect x="70" y="2" width="2" height="8" rx="1"/>
+      <rect x="80" y="2" width="2" height="8" rx="1"/>
+      <rect x="90" y="2" width="2" height="8" rx="1"/>
+      <rect x="100" y="2" width="2" height="8" rx="1"/>
+      <rect x="110" y="2" width="2" height="8" rx="1"/>
+      <rect x="120" y="2" width="2" height="8" rx="1"/>
+      <rect x="130" y="2" width="2" height="8" rx="1"/>
+      <rect x="140" y="2" width="2" height="8" rx="1"/>
+      <rect x="150" y="2" width="2" height="8" rx="1"/>
+      <rect x="160" y="2" width="2" height="8" rx="1"/>
+      <rect x="170" y="2" width="2" height="8" rx="1"/>
+      <rect x="180" y="2" width="2" height="8" rx="1"/>
+      <rect x="190" y="2" width="2" height="8" rx="1"/>
+      <rect x="200" y="2" width="2" height="8" rx="1"/>
+      <rect x="210" y="2" width="2" height="8" rx="1"/>
+      <rect x="220" y="2" width="2" height="8" rx="1"/>
+      <rect x="230" y="2" width="2" height="8" rx="1"/>
+      <rect x="240" y="2" width="2" height="8" rx="1"/>
+      <rect x="250" y="2" width="2" height="8" rx="1"/>
+      <rect x="260" y="2" width="2" height="8" rx="1"/>
+    </g>
+  </g>
+  
+  <!-- Rebar bar 2 -->
+  <g transform="translate(30, 90) rotate(10)">
+    <rect x="0" y="0" width="260" height="12" rx="6" fill="url(#steelGradient)"/>
+    <rect x="0" y="0" width="260" height="12" rx="6" fill="url(#ribPattern)" opacity="0.6"/>
+    <!-- Ribs/deformations -->
+    <g fill="#4B5563">
+      <rect x="20" y="2" width="2" height="8" rx="1"/>
+      <rect x="30" y="2" width="2" height="8" rx="1"/>
+      <rect x="40" y="2" width="2" height="8" rx="1"/>
+      <rect x="50" y="2" width="2" height="8" rx="1"/>
+      <rect x="60" y="2" width="2" height="8" rx="1"/>
+      <rect x="70" y="2" width="2" height="8" rx="1"/>
+      <rect x="80" y="2" width="2" height="8" rx="1"/>
+      <rect x="90" y="2" width="2" height="8" rx="1"/>
+      <rect x="100" y="2" width="2" height="8" rx="1"/>
+      <rect x="110" y="2" width="2" height="8" rx="1"/>
+      <rect x="120" y="2" width="2" height="8" rx="1"/>
+      <rect x="130" y="2" width="2" height="8" rx="1"/>
+      <rect x="140" y="2" width="2" height="8" rx="1"/>
+      <rect x="150" y="2" width="2" height="8" rx="1"/>
+      <rect x="160" y="2" width="2" height="8" rx="1"/>
+      <rect x="170" y="2" width="2" height="8" rx="1"/>
+      <rect x="180" y="2" width="2" height="8" rx="1"/>
+      <rect x="190" y="2" width="2" height="8" rx="1"/>
+      <rect x="200" y="2" width="2" height="8" rx="1"/>
+      <rect x="210" y="2" width="2" height="8" rx="1"/>
+      <rect x="220" y="2" width="2" height="8" rx="1"/>
+      <rect x="230" y="2" width="2" height="8" rx="1"/>
+      <rect x="240" y="2" width="2" height="8" rx="1"/>
+    </g>
+  </g>
+  
+  <!-- Rebar bar 3 -->
+  <g transform="translate(40, 140) rotate(5)">
+    <rect x="0" y="0" width="240" height="12" rx="6" fill="url(#steelGradient)"/>
+    <rect x="0" y="0" width="240" height="12" rx="6" fill="url(#ribPattern)" opacity="0.6"/>
+    <!-- Ribs/deformations -->
+    <g fill="#4B5563">
+      <rect x="20" y="2" width="2" height="8" rx="1"/>
+      <rect x="30" y="2" width="2" height="8" rx="1"/>
+      <rect x="40" y="2" width="2" height="8" rx="1"/>
+      <rect x="50" y="2" width="2" height="8" rx="1"/>
+      <rect x="60" y="2" width="2" height="8" rx="1"/>
+      <rect x="70" y="2" width="2" height="8" rx="1"/>
+      <rect x="80" y="2" width="2" height="8" rx="1"/>
+      <rect x="90" y="2" width="2" height="8" rx="1"/>
+      <rect x="100" y="2" width="2" height="8" rx="1"/>
+      <rect x="110" y="2" width="2" height="8" rx="1"/>
+      <rect x="120" y="2" width="2" height="8" rx="1"/>
+      <rect x="130" y="2" width="2" height="8" rx="1"/>
+      <rect x="140" y="2" width="2" height="8" rx="1"/>
+      <rect x="150" y="2" width="2" height="8" rx="1"/>
+      <rect x="160" y="2" width="2" height="8" rx="1"/>
+      <rect x="170" y="2" width="2" height="8" rx="1"/>
+      <rect x="180" y="2" width="2" height="8" rx="1"/>
+      <rect x="190" y="2" width="2" height="8" rx="1"/>
+      <rect x="200" y="2" width="2" height="8" rx="1"/>
+      <rect x="210" y="2" width="2" height="8" rx="1"/>
+      <rect x="220" y="2" width="2" height="8" rx="1"/>
+    </g>
+  </g>
+  
+  <!-- Rebar bar 4 -->
+  <g transform="translate(50, 190) rotate(0)">
+    <rect x="0" y="0" width="220" height="12" rx="6" fill="url(#steelGradient)"/>
+    <rect x="0" y="0" width="220" height="12" rx="6" fill="url(#ribPattern)" opacity="0.6"/>
+    <!-- Ribs/deformations -->
+    <g fill="#4B5563">
+      <rect x="20" y="2" width="2" height="8" rx="1"/>
+      <rect x="30" y="2" width="2" height="8" rx="1"/>
+      <rect x="40" y="2" width="2" height="8" rx="1"/>
+      <rect x="50" y="2" width="2" height="8" rx="1"/>
+      <rect x="60" y="2" width="2" height="8" rx="1"/>
+      <rect x="70" y="2" width="2" height="8" rx="1"/>
+      <rect x="80" y="2" width="2" height="8" rx="1"/>
+      <rect x="90" y="2" width="2" height="8" rx="1"/>
+      <rect x="100" y="2" width="2" height="8" rx="1"/>
+      <rect x="110" y="2" width="2" height="8" rx="1"/>
+      <rect x="120" y="2" width="2" height="8" rx="1"/>
+      <rect x="130" y="2" width="2" height="8" rx="1"/>
+      <rect x="140" y="2" width="2" height="8" rx="1"/>
+      <rect x="150" y="2" width="2" height="8" rx="1"/>
+      <rect x="160" y="2" width="2" height="8" rx="1"/>
+      <rect x="170" y="2" width="2" height="8" rx="1"/>
+      <rect x="180" y="2" width="2" height="8" rx="1"/>
+      <rect x="190" y="2" width="2" height="8" rx="1"/>
+      <rect x="200" y="2" width="2" height="8" rx="1"/>
+    </g>
+  </g>
+  
+  <!-- Label/tag -->
+  <rect x="50" y="230" width="200" height="40" rx="4" fill="white" stroke="#1E3A8A" stroke-width="2"/>
+  <text x="150" y="245" text-anchor="middle" fill="#1E3A8A" font-family="Arial, sans-serif" font-size="12" font-weight="bold">NUCOR STEEL</text>
+  <text x="150" y="260" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="10">Grade 60 #4 Rebar - 20ft</text>
+</svg>
