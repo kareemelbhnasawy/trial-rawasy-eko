@@ -14,6 +14,8 @@ export default function CheckOutMain() {
     const router = useRouter();
     const [coupon, setCoupon] = useState('');
     const [discount, setDiscount] = useState(0);
+    const [paymentMethod, setPaymentMethod] = useState('');
+    const [termsAccepted, setTermsAccepted] = useState(false);
     const [billingInfo, setBillingInfo] = useState({
         email: '',
         firstName: '',
