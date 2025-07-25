@@ -17,6 +17,7 @@ interface CartContextProps {
   addToWishlist: (item: CartItem) => void;
   removeFromCart: (id: number) => void;
   updateItemQuantity: (id: number, quantity: number) => void;
+  setCartItems: React.Dispatch<React.SetStateAction<CartItem[]>>;
   isCartLoaded: boolean;
 }
 
