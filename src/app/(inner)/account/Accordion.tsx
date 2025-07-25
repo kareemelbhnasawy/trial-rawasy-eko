@@ -160,17 +160,72 @@ const AccountTabs = () => {
                     To keep up with the status of your order, kindly input your OrderID
                     in the designated box below and click the "Track" button.
                   </p>
-                  <form className="order-tracking">
+                  <form className="order-tracking" onSubmit={handleTrackOrder}>
                     <div className="single-input">
                       <label>Order Id</label>
-                      <input type="text" placeholder="Found in your order confirmation email" required />
+                      <input
+                        type="text"
+                        placeholder="Found in your order confirmation email"
+                        value={trackingId}
+                        onChange={(e) => setTrackingId(e.target.value)}
+                        required
+                      />
                     </div>
                     <div className="single-input">
                       <label>Billing email</label>
-                      <input type="email" placeholder="Email You use during checkout" />
+                      <input
+                        type="email"
+                        placeholder="Email You use during checkout"
+                        value={trackingEmail}
+                        onChange={(e) => setTrackingEmail(e.target.value)}
+                        required
+                      />
                     </div>
                     <button className="rts-btn btn-primary" type="submit">Track</button>
                   </form>
+
+                  {trackingResult && (
+                    <div style={{ marginTop: '30px', padding: '20px', border: '1px solid #ddd', borderRadius: '8px' }}>
+                      {trackingResult === 'not_found' ? (
+                        <div style={{ color: '#ef4444' }}>
+                          <h4>Order Not Found</h4>
+                          <p>Please check your order ID and email address and try again.</p>
+                        </div>
+                      ) : (
+                        <div>
+                          <h4 style={{ color: '#1E3A8A', marginBottom: '15px' }}>
+                            Order #{trackingResult.orderNumber}
+                          </h4>
+                          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '15px' }}>
+                            <div>
+                              <strong>Status:</strong>
+                              <span style={{
+                                color: getStatusColor(trackingResult.status),
+                                fontWeight: 'bold',
+                                textTransform: 'capitalize',
+                                marginLeft: '8px'
+                              }}>
+                                {trackingResult.status}
+                              </span>
+                            </div>
+                            <div><strong>Date:</strong> {new Date(trackingResult.date).toLocaleDateString()}</div>
+                            <div><strong>Total:</strong> ${trackingResult.total.toFixed(2)}</div>
+                            <div><strong>Payment:</strong> {trackingResult.paymentMethod}</div>
+                          </div>
+                          <div style={{ marginTop: '15px' }}>
+                            <strong>Items:</strong>
+                            <ul style={{ marginTop: '8px', paddingLeft: '20px' }}>
+                              {trackingResult.items.map((item: any, index: number) => (
+                                <li key={index}>
+                                  {item.title} (x{item.quantity}) - ${(item.price * item.quantity).toFixed(2)}
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
               )}
 
