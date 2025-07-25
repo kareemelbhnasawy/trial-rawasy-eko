@@ -260,27 +260,68 @@ export default function CheckOutMain() {
                             <div className="cottom-cart-right-area">
                                 <ul>
                                     <li>
-                                        <input type="radio" id="bank" name="payment" />
+                                        <input
+                                            type="radio"
+                                            id="bank"
+                                            name="payment"
+                                            value="bank_transfer"
+                                            checked={paymentMethod === 'bank_transfer'}
+                                            onChange={(e) => setPaymentMethod(e.target.value)}
+                                        />
                                         <label htmlFor="bank">Direct Bank Transfer</label>
                                     </li>
                                     <li>
-                                        <input type="radio" id="check" name="payment" />
+                                        <input
+                                            type="radio"
+                                            id="check"
+                                            name="payment"
+                                            value="check"
+                                            checked={paymentMethod === 'check'}
+                                            onChange={(e) => setPaymentMethod(e.target.value)}
+                                        />
                                         <label htmlFor="check">Check Payments</label>
                                     </li>
                                     <li>
-                                        <input type="radio" id="cod" name="payment" />
+                                        <input
+                                            type="radio"
+                                            id="cod"
+                                            name="payment"
+                                            value="cash_on_delivery"
+                                            checked={paymentMethod === 'cash_on_delivery'}
+                                            onChange={(e) => setPaymentMethod(e.target.value)}
+                                        />
                                         <label htmlFor="cod">Cash On Delivery</label>
                                     </li>
                                     <li>
-                                        <input type="radio" id="paypal" name="payment" />
+                                        <input
+                                            type="radio"
+                                            id="paypal"
+                                            name="payment"
+                                            value="paypal"
+                                            checked={paymentMethod === 'paypal'}
+                                            onChange={(e) => setPaymentMethod(e.target.value)}
+                                        />
                                         <label htmlFor="paypal">Paypal</label>
                                     </li>
                                 </ul>
                                 <div className="single-category mb--30">
-                                    <input id="terms" type="checkbox" required />
+                                    <input
+                                        id="terms"
+                                        type="checkbox"
+                                        checked={termsAccepted}
+                                        onChange={(e) => setTermsAccepted(e.target.checked)}
+                                        required
+                                    />
                                     <label htmlFor="terms"> I have read and agree to terms and conditions *</label>
                                 </div>
-                                <a href="#" className="rts-btn btn-primary">Place Order</a>
+                                <button
+                                    type="button"
+                                    className="rts-btn btn-primary"
+                                    onClick={handlePlaceOrder}
+                                    disabled={activeCartItems.length === 0}
+                                >
+                                    Place Order
+                                </button>
                             </div>
                         </div>
                     </div>
