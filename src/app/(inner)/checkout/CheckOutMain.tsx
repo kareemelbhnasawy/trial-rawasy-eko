@@ -212,13 +212,13 @@ export default function CheckOutMain() {
                                 <div className="price">Price</div>
                             </div>
 
-                            {cartItems.length === 0 ? (
+                            {activeCartItems.length === 0 ? (
                                 <p>Your cart is empty.</p>
                             ) : (
-                                cartItems.map((item) => (
+                                activeCartItems.map((item) => (
                                     <div className="single-shop-list" key={item.id}>
                                         <div className="left-area">
-                                            <img src={item.image} alt={item.title} />
+                                            <img src={`/assets/images/products/${item.image}`} alt={item.title} />
                                             <span className="title">{item.title} × {item.quantity}</span>
                                         </div>
                                         <span className="price">${(item.price * item.quantity).toFixed(2)}</span>
