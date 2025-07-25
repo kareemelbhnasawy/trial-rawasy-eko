@@ -29,7 +29,7 @@ function TrandingProduct() {
                                                         </span>
                                                         <i className="fa-solid fa-bookmark" />
                                                     </div>
-                                                    <img src="assets/images/grocery/07.jpg" alt="grocery" />
+                                                    <img src="assets/images/products/07.jpg" alt="grocery" />
                                                 </a>
                                                 <div className="body-content">
                                                     <a href="/shop">
@@ -53,7 +53,7 @@ function TrandingProduct() {
                                                         </span>
                                                         <i className="fa-solid fa-bookmark" />
                                                     </div>
-                                                    <img src="assets/images/grocery/08.jpg" alt="grocery" />
+                                                    <img src="assets/images/products/08.jpg" alt="grocery" />
                                                 </a>
                                                 <div className="body-content">
                                                     <a href="/shop">
@@ -77,7 +77,7 @@ function TrandingProduct() {
                                                         </span>
                                                         <i className="fa-solid fa-bookmark" />
                                                     </div>
-                                                    <img src="assets/images/grocery/09.jpg" alt="grocery" />
+                                                    <img src="assets/images/products/09.jpg" alt="grocery" />
                                                 </a>
                                                 <div className="body-content">
                                                     <a href="/shop">
@@ -101,7 +101,7 @@ function TrandingProduct() {
                                                         </span>
                                                         <i className="fa-solid fa-bookmark" />
                                                     </div>
-                                                    <img src="assets/images/grocery/10.jpg" alt="grocery" />
+                                                    <img src="assets/images/products/10.jpg" alt="grocery" />
                                                 </a>
                                                 <div className="body-content">
                                                     <a href="/shop">
@@ -125,7 +125,7 @@ function TrandingProduct() {
                                                         </span>
                                                         <i className="fa-solid fa-bookmark" />
                                                     </div>
-                                                    <img src="assets/images/grocery/11.jpg" alt="grocery" />
+                                                    <img src="assets/images/products/11.jpg" alt="grocery" />
                                                 </a>
                                                 <div className="body-content">
                                                     <a href="/shop">
@@ -149,7 +149,7 @@ function TrandingProduct() {
                                                         </span>
                                                         <i className="fa-solid fa-bookmark" />
                                                     </div>
-                                                    <img src="assets/images/grocery/12.jpg" alt="grocery" />
+                                                    <img src="assets/images/products/12.jpg" alt="grocery" />
                                                 </a>
                                                 <div className="body-content">
                                                     <a href="/shop">
@@ -173,7 +173,7 @@ function TrandingProduct() {
                                                         </span>
                                                         <i className="fa-solid fa-bookmark" />
                                                     </div>
-                                                    <img src="assets/images/grocery/13.jpg" alt="grocery" />
+                                                    <img src="assets/images/products/13.jpg" alt="grocery" />
                                                 </a>
                                                 <div className="body-content">
                                                     <a href="/shop">
@@ -197,7 +197,7 @@ function TrandingProduct() {
                                                         </span>
                                                         <i className="fa-solid fa-bookmark" />
                                                     </div>
-                                                    <img src="assets/images/grocery/14.jpg" alt="grocery" />
+                                                    <img src="assets/images/products/14.jpg" alt="grocery" />
                                                 </a>
                                                 <div className="body-content">
                                                     <a href="/shop">
