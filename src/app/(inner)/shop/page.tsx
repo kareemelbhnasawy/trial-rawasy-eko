@@ -27,8 +27,8 @@ function ShopContent() {
   const [minPrice, setMinPrice] = useState<number>(0);
   const [maxPrice, setMaxPrice] = useState<number>(150);
 
-  const allCategories = ["Beverages", "Biscuits & Snacks", "Breads & Bakery"];
-  const allBrands = ["Frito Lay", "Nespresso", "Oreo", "Quaker", "Welch's"];
+  const allCategories = ["Building Materials", "Construction Tools", "Heavy Equipment", "Electrical Materials", "Plumbing Supplies", "Safety Equipment"];
+  const allBrands = ["CEMEX", "Nucor Steel", "DeWalt", "3M", "Charlotte Pipe", "Caterpillar", "Georgia-Pacific"];
 
   const categoryProductIndices: { [key: string]: number[] } = {
     "Beverages": [1, 3, 4, 5, 6, 7],
