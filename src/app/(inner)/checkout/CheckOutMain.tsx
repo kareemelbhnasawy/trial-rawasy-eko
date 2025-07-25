@@ -9,7 +9,9 @@ import { toast } from 'react-toastify';
 const DEFAULT_SHIPPING_COST = 50;
 
 export default function CheckOutMain() {
-    const { cartItems } = useCart();
+    const { cartItems, setCartItems } = useCart();
+    const { addOrder } = useOrder();
+    const router = useRouter();
     const [coupon, setCoupon] = useState('');
     const [discount, setDiscount] = useState(0);
     const [billingInfo, setBillingInfo] = useState({
