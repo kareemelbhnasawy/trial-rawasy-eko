@@ -41,7 +41,8 @@ export default function CheckOutMain() {
         }
     };
 
-    const subtotal = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
+    const activeCartItems = cartItems.filter(item => item.active);
+    const subtotal = activeCartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
     const discountAmount = subtotal * discount;
     const shippingCost = discount > 0 ? 0 : DEFAULT_SHIPPING_COST;
     const total = subtotal - discountAmount + shippingCost;
