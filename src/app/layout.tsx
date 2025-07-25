@@ -52,8 +52,10 @@ export default function RootLayout({
         <CompareProvider>
           <WishlistProvider>
             <CartProvider>
-              {children}
-              <ToastContainer position="top-right" autoClose={3000} />
+              <OrderProvider>
+                {children}
+                <ToastContainer position="top-right" autoClose={3000} />
+              </OrderProvider>
             </CartProvider>
           </WishlistProvider>
         </CompareProvider>
