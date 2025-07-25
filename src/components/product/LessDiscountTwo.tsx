@@ -41,7 +41,7 @@ function LessDiscountTwo() {
                                                                     Pastine Mellin Filid Angelo 100% Di Grano Tenero
                                                                 </h4>
                                                             </a>
-                                                            <span className="availability">500g Pack</span>
+                                                            <span className="availability">In Stock</span>
                                                             <div className="price-area">
                                                                 <span className="current">$36.00</span>
                                                                 <div className="previous">$36.00</div>
@@ -68,7 +68,7 @@ function LessDiscountTwo() {
                                             <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
                                                 <div className="single-shopping-card-one tranding-product with-progress">
                                                     <a href="/shop" className="thumbnail-preview">
-                                                        <img src="assets/images/grocery/28.jpg" alt="grocery" />
+                                                        <img src="assets/images/products/marine-plywood.jpg" alt="construction materials" />
                                                     </a>
                                                     <div className="body-content">
                                                         <div className="top">
@@ -85,7 +85,7 @@ function LessDiscountTwo() {
                                                                     Pastine Mellin Filid Angelo 100% Di Grano Tenero
                                                                 </h4>
                                                             </a>
-                                                            <span className="availability">500g Pack</span>
+                                                            <span className="availability">In Stock</span>
                                                             <div className="price-area">
                                                                 <span className="current">$36.00</span>
                                                                 <div className="previous">$36.00</div>
@@ -112,7 +112,7 @@ function LessDiscountTwo() {
                                             <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
                                                 <div className="single-shopping-card-one tranding-product with-progress">
                                                     <a href="/shop" className="thumbnail-preview">
-                                                        <img src="assets/images/grocery/10.jpg" alt="grocery" />
+                                                        <img src="assets/images/products/concrete-blocks.jpg" alt="construction materials" />
                                                     </a>
                                                     <div className="body-content">
                                                         <div className="top">
@@ -129,7 +129,7 @@ function LessDiscountTwo() {
                                                                     Pastine Mellin Filid Angelo 100% Di Grano Tenero
                                                                 </h4>
                                                             </a>
-                                                            <span className="availability">500g Pack</span>
+                                                            <span className="availability">In Stock</span>
                                                             <div className="price-area">
                                                                 <span className="current">$36.00</span>
                                                                 <div className="previous">$36.00</div>
