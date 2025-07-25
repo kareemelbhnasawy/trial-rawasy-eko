@@ -74,11 +74,13 @@ function CategoryMenu() {
                 {menuItems.map((item, index) => (
                     <li key={index}>
                         <a
-                            href="#"
+                            href={item.submenu ? "#" : `/shop?category=${encodeURIComponent(item.label.split(' (')[0])}`}
                             className="menu-item"
                             onClick={(e: MouseEvent<HTMLAnchorElement>) => {
-                                e.preventDefault();
-                                if (item.submenu) toggleMenu(index);
+                                if (item.submenu) {
+                                    e.preventDefault();
+                                    toggleMenu(index);
+                                }
                             }}
                         >
                             <img src={`/assets/images/icons/${item.icon}`} alt="icons" />
