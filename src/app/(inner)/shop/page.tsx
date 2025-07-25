@@ -132,6 +132,14 @@ function ShopContent() {
         return false;
       }
 
+      // Filter by subcategory if specified
+      if (subcategoryParam) {
+        const productSubcategory = (product as any).subcategory?.toLowerCase() || '';
+        if (!productSubcategory.includes(subcategoryParam.toLowerCase())) {
+          return false;
+        }
+      }
+
       if (!searchQuery) return true;
       const title = product.title?.toLowerCase() || '';
       const category = product.category?.toLowerCase() || '';
