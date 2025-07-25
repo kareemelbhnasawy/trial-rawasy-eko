@@ -6,10 +6,11 @@ function NavItem() {
             <nav>
                 <ul className="parent-nav">
                     <li className="parent has-dropdown">
-                        <a className="nav-link" href="#">
+                        {/* <a className="nav-link" href="#"> */}
+                        <a className="nav-link" href="/">
                             Home
                         </a>
-                        <ul className="submenu">
+                        {/* <ul className="submenu">
                             <li>
                                 <a className="sub-b" href="/">
                                     Home One
@@ -35,7 +36,7 @@ function NavItem() {
                                     Home Five
                                 </a>
                             </li>
-                        </ul>
+                        </ul> */}
                     </li>
                     <li className="parent">
                         <a href="/about">About</a>
@@ -53,9 +54,10 @@ function NavItem() {
                             <li>
                                 <a className="sub-b" href="/vendor-list">
                                     Vendor List
+                                     <span className="badge">New</span>
                                 </a>
                             </li>
-                            <li>
+                            {/* <li>
                                 <a className="sub-b" href="/vendor-grid">
                                     Vendor Grid
                                 </a>
@@ -64,10 +66,10 @@ function NavItem() {
                                 <a className="sub-b" href="/vendor-details">
                                     Vendor Details
                                 </a>
-                            </li>
+                            </li> */}
                         </ul>
                     </li>
-                    <li className="parent has-dropdown">
+                    {/* <li className="parent has-dropdown">
                         <a className="nav-link" href="#">
                             Pages
                         </a>
@@ -134,8 +136,8 @@ function NavItem() {
                                 </a>
                             </li>
                         </ul>
-                    </li>
-                    <li className="parent has-dropdown">
+                    </li> */}
+                    {/* <li className="parent has-dropdown">
                         <a className="nav-link" href="#">
                             Blog
                         </a>
@@ -168,7 +170,7 @@ function NavItem() {
                                 </a>
                             </li>
                         </ul>
-                    </li>
+                    </li> */}
                     <li className="parent">
                         <a href="/dashboard">
                             Dashboard

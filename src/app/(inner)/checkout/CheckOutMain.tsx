@@ -221,7 +221,7 @@ export default function CheckOutMain() {
                                 activeCartItems.map((item) => (
                                     <div className="single-shop-list" key={item.id}>
                                         <div className="left-area">
-                                            <img src={`/assets/images/products/${item.image}`} alt={item.title} />
+                                            <img src={`${item.image}`} alt={item.title} />
                                             <span className="title">{item.title} × {item.quantity}</span>
                                         </div>
                                         <span className="price">${(item.price * item.quantity).toFixed(2)}</span>

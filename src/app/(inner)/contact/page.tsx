@@ -14,11 +14,9 @@ export default function Home() {
                         <div className="row">
                             <div className="co-lg-12">
                                 <div className="contact-banner-content">
-                                    <h1 className="title">Ask Us Question</h1>
+                                    <h1 className="title">Rawasy Contact Center</h1>
                                     <p className="disc">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                                        pretium mollis ex, vel interdum augue faucibus sit amet. Proin
-                                        tempor purus ac suscipit...
+                                        Welcome to Rawasy! Reach out for support, partnership, or any inquiry. Our team is ready to assist you with all your construction and supply needs.
                                     </p>
                                 </div>
                             </div>
@@ -32,23 +30,22 @@ export default function Home() {
                         <div className="row">
                             <div className="col-lg-4">
                                 <div className="contact-left-area-main-wrapper">
-                                    <h2 className="title">You can ask us questions !</h2>
+                                    <h2 className="title">Contact Rawasy Offices</h2>
                                     <p className="disc">
-                                        Contact us for all your questions and opinions, or you can solve
-                                        your problems in a shorter time with our contact offices.
+                                        For questions, feedback, or business inquiries, connect with our offices below or use the form to get a quick response.
                                     </p>
                                     <div className="location-single-card">
                                         <div className="icon">
                                             <i className="fa-light fa-location-dot" />
                                         </div>
                                         <div className="information">
-                                            <h3 className="title">Berlin Germany Store</h3>
-                                            <p>259 Daniel Road, FKT 2589 Berlin, Germany.</p>
+                                            <h3 className="title">Rawasy HQ - Riyadh</h3>
+                                            <p>King Fahd Road, Riyadh, Saudi Arabia</p>
                                             <a href="#" className="number">
-                                                +856 (76) 259 6328
+                                                +966 11 123 4567
                                             </a>
                                             <a href="#" className="email">
-                                                info@example.com
+                                                contact@rawasy.com
                                             </a>
                                         </div>
                                     </div>
@@ -57,13 +54,13 @@ export default function Home() {
                                             <i className="fa-light fa-location-dot" />
                                         </div>
                                         <div className="information">
-                                            <h3 className="title">Frankfurt Germany Store</h3>
-                                            <p>259 Daniel Road, FKT 2589 Berlin, Germany.</p>
+                                            <h3 className="title">Rawasy Branch - Jeddah</h3>
+                                            <p>Al Tahlia Street, Jeddah, Saudi Arabia</p>
                                             <a href="#" className="number">
-                                                +856 (76) 259 6328
+                                                +966 12 987 6543
                                             </a>
                                             <a href="#" className="email">
-                                                info@example.com
+                                                jeddah@rawasy.com
                                             </a>
                                         </div>
                                     </div>
@@ -71,11 +68,11 @@ export default function Home() {
                             </div>
                             <div className="col-lg-8 pl--50 pl_sm--5 pl_md--5">
                                 <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14602.288851207937!2d90.47855065!3d23.798243149999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1716725338558!5m2!1sen!2sbd"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.927123456789!2d46.675295!3d24.713552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f038b7e8b7e8b%3A0x7e8b7e8b7e8b7e8b!2sKing%20Fahd%20Road%2C%20Riyadh!5e0!3m2!1sen!2ssa!4v1716725338558!5m2!1sen!2ssa"
                                     width={600}
                                     height={540}
                                     style={{ border: 0 }}
-                                    allowFullScreen={true} // Fixed here: Set to true or omitted if not needed
+                                    allowFullScreen={true}
                                     loading="lazy"
                                     referrerPolicy="no-referrer-when-downgrade"
                                 />
@@ -93,12 +90,12 @@ export default function Home() {
                                         <div className="col-lg-7 pr--30 pr_md--10 pr_sm--5">
                                             <div className="contact-form-wrapper-1">
                                                 <h3 className="title mb--50">
-                                                    Fill Up The Form If You Have Any Question
+                                                    Get in Touch with Rawasy
                                                 </h3>
                                                 <form action="#" className="contact-form-1">
                                                     <div className="contact-form-wrapper--half-area">
                                                         <div className="single">
-                                                            <input type="text" placeholder="name*" />
+                                                            <input type="text" placeholder="Name*" />
                                                         </div>
                                                         <div className="single">
                                                             <input type="text" placeholder="Email*" />
@@ -106,15 +103,15 @@ export default function Home() {
                                                     </div>
                                                     <div className="single-select">
                                                         <select>
-                                                            <option data-display="Subject*">All Categories</option>
-                                                            <option value={1}>Some option</option>
-                                                            <option value={2}>Another option</option>
-                                                            <option value={3}>Potato</option>
+                                                            <option data-display="Subject*">General Inquiry</option>
+                                                            <option value={1}>Partnership</option>
+                                                            <option value={2}>Support</option>
+                                                            <option value={3}>Feedback</option>
                                                         </select>
                                                     </div>
                                                     <textarea
                                                         name="message"
-                                                        placeholder="Write Message Here"
+                                                        placeholder="Write your message here..."
                                                         defaultValue={""}
                                                     />
                                                     <button className="rts-btn btn-primary mt--20">
@@ -125,7 +122,7 @@ export default function Home() {
                                         </div>
                                         <div className="col-lg-5 mt_md--30 mt_sm--30">
                                             <div className="thumbnail-area">
-                                                <img src="assets/images/contact/02.jpg" alt="contact_form" />
+                                                <img src="/assets/images/contact/rawasy-contact.jpg" alt="Rawasy Contact" />
                                             </div>
                                         </div>
                                     </div>
