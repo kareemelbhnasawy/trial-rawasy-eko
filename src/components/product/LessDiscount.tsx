@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 const products = [
   {
     id: 1,
-    img: '/assets/images/products/cement-bag.jpg',
+    img: '/assets/images/products/cement-bag.svg',
     title: 'Portland Cement Type I - 94 lb Bag',
     pack: 'In Stock',
     currentPrice: '$12.50',
@@ -18,7 +18,7 @@ const products = [
   },
   {
     id: 2,
-    img: '/assets/images/products/steel-rebar.jpg',
+    img: '/assets/images/products/steel-rebar.svg',
     title: 'Steel Rebar Grade 60 - #4 (1/2 inch) x 20 ft',
     pack: 'In Stock',
     currentPrice: '$8.75',
@@ -26,7 +26,7 @@ const products = [
   },
   {
     id: 3,
-    img: '/assets/images/products/marine-plywood.jpg',
+    img: '/assets/images/products/marine-plywood.svg',
     title: 'Marine Grade Plywood - 1/2" x 4\' x 8\'',
     pack: 'In Stock',
     currentPrice: '$89.99',
@@ -34,7 +34,7 @@ const products = [
   },
   {
     id: 4,
-    img: '/assets/images/products/concrete-blocks.jpg',
+    img: '/assets/images/products/concrete-blocks.svg',
     title: 'Standard Concrete Blocks - 8" x 8" x 16"',
     pack: 'In Stock',
     currentPrice: '$2.25',
@@ -42,7 +42,7 @@ const products = [
   },
   {
     id: 5,
-    img: '/assets/images/products/safety-helmet.jpg',
+    img: '/assets/images/products/safety-helmet.svg',
     title: 'Safety Hard Hat - ANSI Z89.1 Type I Class E',
     pack: 'In Stock',
     currentPrice: '$24.99',
@@ -50,7 +50,7 @@ const products = [
   },
   {
     id: 6,
-    img: '/assets/images/products/power-drill.jpg',
+    img: '/assets/images/products/power-drill.svg',
     title: 'Cordless Drill Driver - 18V Li-Ion Kit',
     pack: 'In Stock',
     currentPrice: '$189.99',
