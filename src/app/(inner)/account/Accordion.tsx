@@ -5,6 +5,30 @@ import { useOrder } from '@/components/header/OrderContext';
 
 const AccountTabs = () => {
   const [activeTab, setActiveTab] = useState('track');
+  const { orders } = useOrder();
+  const [trackingId, setTrackingId] = useState('');
+  const [trackingEmail, setTrackingEmail] = useState('');
+  const [trackingResult, setTrackingResult] = useState<any>(null);
+
+  const handleTrackOrder = (e: React.FormEvent) => {
+    e.preventDefault();
+    const order = orders.find(o =>
+      o.orderNumber.toLowerCase() === trackingId.toLowerCase() &&
+      o.billingInfo.email.toLowerCase() === trackingEmail.toLowerCase()
+    );
+    setTrackingResult(order || 'not_found');
+  };
+
+  const getStatusColor = (status: string) => {
+    switch (status) {
+      case 'pending': return '#fbbf24';
+      case 'processing': return '#3b82f6';
+      case 'shipped': return '#8b5cf6';
+      case 'delivered': return '#10b981';
+      case 'cancelled': return '#ef4444';
+      default: return '#6b7280';
+    }
+  };
 
   return (
     <div className="account-tab-area-start rts-section-gap">
