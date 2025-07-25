@@ -152,7 +152,7 @@
     padding: 0 26px;
     gap: 10px;
     font-weight: 500;
-    color: #2C3C28;
+    color: var(--color-heading-1);
     transition: .3s;
     box-shadow: 0px 6px 17px rgba(0, 0, 0, 0.06);
     @media #{$sm-layout} {
