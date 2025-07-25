@@ -26,7 +26,7 @@ export default function Home() {
           <FeatureProduct />
           <DiscountProduct />
           <WeeklyBestSelling />
-          <FeatureDiscount />
+          {/* <FeatureDiscount /> */}
           <TrandingProduct />
           <BlogOne />
           <FooterOne />

@@ -53,7 +53,7 @@ function DiscountProduct() {
                         <div className="col-lg-12">
                             <div className="product-with-discount">
                                 <div className="row g-5">
-                                    <div className="col-xl-4 col-lg-12">
+                                    {/* <div className="col-xl-4 col-lg-12">
                                         <a href="shop-details.html" className="single-discount-with-bg">
                                             <div className="inner-content">
                                                 <h4 className="title">
@@ -81,7 +81,7 @@ function DiscountProduct() {
                                                 </div>
                                             </div>
                                         </a>
-                                    </div>
+                                    </div> */}
                                     <div className="col-xl-8 col-lg-12">
                                         <div className="row g-4">
 
