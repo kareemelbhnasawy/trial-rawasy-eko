@@ -174,31 +174,34 @@ export default function CheckOutMain() {
                         {/* Billing Form */}
                         <div className="rts-billing-details-area">
                             <h3 className="title">Billing Details</h3>
-                            <form>
+                            <form onSubmit={(e) => e.preventDefault()}>
                                 {[
-                                    { id: 'email', label: 'Email Address*' },
-                                    { id: 'firstName', label: 'First Name*' },
-                                    { id: 'lastName', label: 'Last Name*' },
-                                    { id: 'company', label: 'Company Name (Optional)*' },
-                                    { id: 'country', label: 'Country / Region*' },
-                                    { id: 'street', label: 'Street Address*' },
-                                    { id: 'city', label: 'Town / City*' },
-                                    { id: 'state', label: 'State*' },
-                                    { id: 'zip', label: 'Zip Code*' },
-                                    { id: 'phone', label: 'Phone*' },
-                                ].map(({ id, label }) => (
+                                    { id: 'email', label: 'Email Address*', type: 'email' },
+                                    { id: 'firstName', label: 'First Name*', type: 'text' },
+                                    { id: 'lastName', label: 'Last Name*', type: 'text' },
+                                    { id: 'company', label: 'Company Name (Optional)', type: 'text' },
+                                    { id: 'country', label: 'Country / Region*', type: 'text' },
+                                    { id: 'street', label: 'Street Address*', type: 'text' },
+                                    { id: 'city', label: 'Town / City*', type: 'text' },
+                                    { id: 'state', label: 'State*', type: 'text' },
+                                    { id: 'zip', label: 'Zip Code*', type: 'text' },
+                                    { id: 'phone', label: 'Phone*', type: 'tel' },
+                                ].map(({ id, label, type }) => (
                                     <div className="single-input" key={id}>
                                         <label htmlFor={id}>{label}</label>
-                                        <input id={id} value={(billingInfo as any)[id]} onChange={handleInputChange} required />
+                                        <input
+                                            id={id}
+                                            type={type}
+                                            value={(billingInfo as any)[id]}
+                                            onChange={handleInputChange}
+                                            required={label.includes('*') && !label.includes('Optional')}
+                                        />
                                     </div>
                                 ))}
                                 <div className="single-input">
-                                    <label htmlFor="orderNotes">Order Notes*</label>
+                                    <label htmlFor="orderNotes">Order Notes (Optional)</label>
                                     <textarea id="orderNotes" value={billingInfo.orderNotes} onChange={handleInputChange}></textarea>
                                 </div>
-                                <button type="submit" className="rts-btn btn-primary">
-                                    Update Cart
-                                </button>
                             </form>
                         </div>
                     </div>
