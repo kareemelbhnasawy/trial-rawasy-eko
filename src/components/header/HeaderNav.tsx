@@ -73,8 +73,8 @@ function ComponentName() {
                             <div className="logo-search-category-wrapper after-md-device-header">
                                 <a href="index" className="logo-area">
                                     <img
-                                        src="/assets/images/logo/logo-01.svg"
-                                        alt="logo-main"
+                                        src="/assets/images/logo/rawasy-logo-compact.svg"
+                                        alt="Rawasy Construction Materials"
                                         className="logo"
                                     />
                                 </a>

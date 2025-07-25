@@ -207,7 +207,7 @@ function HeaderOne() {
                             <div className="col-lg-12">
                                 <div className="logo-search-category-wrapper">
                                     <a href="/" className="logo-area">
-                                        <img src="/assets/images/logo/logo-01.svg" alt="logo-main" className="logo" />
+                                        <img src="/assets/images/logo/rawasy-logo-compact.svg" alt="Rawasy Construction Materials" className="logo" />
                                     </a>
                                     <div className="category-search-wrapper">
                                         <div className="category-btn category-hover-header">
