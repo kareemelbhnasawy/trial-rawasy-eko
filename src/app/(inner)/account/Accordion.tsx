@@ -91,42 +91,65 @@ const AccountTabs = () => {
               {activeTab === 'order' && (
                 <div className="order-table-account">
                   <div className="h2 title">Your Orders</div>
-                  <div className="table-responsive">
-                    <table className="table">
-                      <thead>
-                        <tr>
-                          <th>Order</th>
-                          <th>Date</th>
-                          <th>Status</th>
-                          <th>Total</th>
-                          <th>Actions</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>#1357</td>
-                          <td>March 45, 2020</td>
-                          <td>Processing</td>
-                          <td>$125.00 for 2 item</td>
-                          <td><a href="#" className="btn-small d-block">View</a></td>
-                        </tr>
-                        <tr>
-                          <td>#2468</td>
-                          <td>June 29, 2020</td>
-                          <td>Completed</td>
-                          <td>$364.00 for 5 item</td>
-                          <td><a href="#" className="btn-small d-block">View</a></td>
-                        </tr>
-                        <tr>
-                          <td>#2366</td>
-                          <td>August 02, 2020</td>
-                          <td>Completed</td>
-                          <td>$280.00 for 3 item</td>
-                          <td><a href="#" className="btn-small d-block">View</a></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                  {orders.length === 0 ? (
+                    <div style={{ textAlign: 'center', padding: '40px 0' }}>
+                      <p>No orders found. <a href="/shop" style={{ color: '#1E3A8A' }}>Start shopping</a></p>
+                    </div>
+                  ) : (
+                    <div className="table-responsive">
+                      <table className="table">
+                        <thead>
+                          <tr>
+                            <th>Order</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Total</th>
+                            <th>Items</th>
+                            <th>Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {orders.map((order) => (
+                            <tr key={order.id}>
+                              <td>#{order.orderNumber}</td>
+                              <td>{new Date(order.date).toLocaleDateString()}</td>
+                              <td>
+                                <span
+                                  style={{
+                                    color: getStatusColor(order.status),
+                                    fontWeight: 'bold',
+                                    textTransform: 'capitalize'
+                                  }}
+                                >
+                                  {order.status}
+                                </span>
+                              </td>
+                              <td>${order.total.toFixed(2)}</td>
+                              <td>{order.items.length} item{order.items.length > 1 ? 's' : ''}</td>
+                              <td>
+                                <button
+                                  className="btn-small d-block"
+                                  onClick={() => {
+                                    alert(`Order Details:\n\nOrder: #${order.orderNumber}\nDate: ${new Date(order.date).toLocaleDateString()}\nStatus: ${order.status}\nTotal: $${order.total.toFixed(2)}\nPayment: ${order.paymentMethod}\n\nItems:\n${order.items.map(item => `- ${item.title} (x${item.quantity}) - $${(item.price * item.quantity).toFixed(2)}`).join('\n')}`);
+                                  }}
+                                  style={{
+                                    background: '#1E3A8A',
+                                    color: 'white',
+                                    border: 'none',
+                                    padding: '5px 12px',
+                                    borderRadius: '4px',
+                                    cursor: 'pointer'
+                                  }}
+                                >
+                                  View
+                                </button>
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  )}
                 </div>
               )}
 
