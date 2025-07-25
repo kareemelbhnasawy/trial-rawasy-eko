@@ -31,17 +31,22 @@ function ShopContent() {
   const allBrands = ["CEMEX", "Nucor Steel", "DeWalt", "3M", "Charlotte Pipe", "Caterpillar", "Georgia-Pacific"];
 
   const categoryProductIndices: { [key: string]: number[] } = {
-    "Beverages": [1, 3, 4, 5, 6, 7],
-    "Biscuits & Snacks": [8, 9, 10, 12, 16],
-    "Breads & Bakery": [15, 1, 2, 3],
+    "Building Materials": [0, 1, 2, 3, 9, 10, 11, 12],
+    "Construction Tools": [7, 15],
+    "Heavy Equipment": [8, 16],
+    "Electrical Materials": [6, 14],
+    "Plumbing Supplies": [5, 13],
+    "Safety Equipment": [4],
   };
 
   const brandProductIndices: { [key: string]: number[] } = {
-    "Frito Lay": [1, 3, 4],
-    "Nespresso": [3, 1, 4],
-    "Oreo": [8, 9, 10],
-    "Quaker": [3, 4, 10],
-    "Welch's": [8, 9, 1],
+    "CEMEX": [0],
+    "Nucor Steel": [1, 9, 10],
+    "DeWalt": [7, 15],
+    "3M": [4],
+    "Charlotte Pipe": [5, 13],
+    "Caterpillar": [8, 16],
+    "Georgia-Pacific": [2, 12],
   };
 
   const handleCategoryChange = (category: string) => {
