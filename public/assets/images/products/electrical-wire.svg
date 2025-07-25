@@ -1,0 +1,83 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wireGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DC2626;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#B91C1C;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="copperGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#D97706;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="300" fill="#F9FAFB"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="150" cy="280" rx="100" ry="15" fill="#000000" opacity="0.1"/>
+  
+  <!-- Wire spool/reel -->
+  <g transform="translate(75, 80)">
+    <!-- Spool sides -->
+    <ellipse cx="75" cy="75" rx="65" ry="15" fill="#374151"/>
+    <ellipse cx="75" cy="25" rx="65" ry="15" fill="#4B5563"/>
+    
+    <!-- Spool center -->
+    <rect x="50" y="25" width="50" height="50" fill="#6B7280"/>
+    <ellipse cx="75" cy="25" rx="25" ry="8" fill="#374151"/>
+    <ellipse cx="75" cy="75" rx="25" ry="8" fill="#374151"/>
+    
+    <!-- Wire wound on spool -->
+    <g>
+      <!-- Multiple layers of wire -->
+      <ellipse cx="75" cy="50" rx="55" ry="25" fill="url(#wireGradient)" opacity="0.9"/>
+      <ellipse cx="75" cy="45" rx="50" ry="22" fill="url(#wireGradient)" opacity="0.8"/>
+      <ellipse cx="75" cy="40" rx="45" ry="19" fill="url(#wireGradient)" opacity="0.7"/>
+      <ellipse cx="75" cy="35" rx="40" ry="16" fill="url(#wireGradient)" opacity="0.6"/>
+      
+      <!-- Wire texture lines -->
+      <g stroke="#7F1D1D" stroke-width="1" fill="none" opacity="0.5">
+        <ellipse cx="75" cy="50" rx="55" ry="25"/>
+        <ellipse cx="75" cy="47" rx="52" ry="23"/>
+        <ellipse cx="75" cy="44" rx="49" ry="21"/>
+        <ellipse cx="75" cy="41" rx="46" ry="19"/>
+        <ellipse cx="75" cy="38" rx="43" ry="17"/>
+      </g>
+    </g>
+    
+    <!-- Loose wire end showing copper -->
+    <g transform="translate(130, 30)">
+      <!-- Wire insulation -->
+      <rect x="0" y="0" width="30" height="8" rx="4" fill="url(#wireGradient)"/>
+      <!-- Stripped end showing copper -->
+      <rect x="25" y="1" width="15" height="6" rx="3" fill="url(#copperGradient)"/>
+    </g>
+  </g>
+  
+  <!-- Southwire brand label -->
+  <rect x="50" y="30" width="200" height="35" rx="4" fill="white" stroke="#1E3A8A" stroke-width="2"/>
+  <text x="150" y="45" text-anchor="middle" fill="#1E3A8A" font-family="Arial, sans-serif" font-size="14" font-weight="bold">SOUTHWIRE</text>
+  <text x="150" y="58" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="11">THHN/THWN-2 Building Wire</text>
+  
+  <!-- Wire specifications -->
+  <rect x="30" y="200" width="80" height="60" rx="4" fill="#DC2626"/>
+  <text x="70" y="218" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">12 AWG</text>
+  <text x="70" y="232" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10">500 FEET</text>
+  <text x="70" y="245" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9">600V RATED</text>
+  <text x="70" y="255" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">90°C DRY</text>
+  
+  <!-- Certifications -->
+  <rect x="130" y="200" width="70" height="60" rx="4" fill="white" stroke="#1E3A8A" stroke-width="2"/>
+  <text x="165" y="218" text-anchor="middle" fill="#1E3A8A" font-family="Arial, sans-serif" font-size="10" font-weight="bold">UL LISTED</text>
+  <text x="165" y="230" text-anchor="middle" fill="#374151" font-family="Arial, sans-serif" font-size="9">NEC Compliant</text>
+  <text x="165" y="242" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="8">RoHS</text>
+  <text x="165" y="254" text-anchor="middle" fill="#6B7280" font-family="Arial, sans-serif" font-size="8">Lead Free</text>
+  
+  <!-- Temperature rating -->
+  <rect x="220" y="200" width="50" height="60" rx="4" fill="#F59E0B"/>
+  <text x="245" y="218" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">TEMP</text>
+  <text x="245" y="230" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9">90°C</text>
+  <text x="245" y="240" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">DRY</text>
+  <text x="245" y="250" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="9">75°C</text>
+  <text x="245" y="260" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8">WET</text>
+</svg>
