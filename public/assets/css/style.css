@@ -17271,7 +17271,7 @@ li.with-megamenu:hover .rts-megamenu {
 }
 
 .banner-one-inner-content .pre {
-  color: #FFE884;
+  color: var(--color-accent);
   font-size: 16px;
 }
 
@@ -18039,7 +18039,7 @@ li.with-megamenu:hover .rts-megamenu {
 }
 
 .single-category-one:hover {
-  border: 1px solid #629D23;
+  border: 1px solid var(--color-primary);
 }
 
 .cover-card-main-over {
