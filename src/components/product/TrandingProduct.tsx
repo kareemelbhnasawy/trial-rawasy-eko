@@ -29,7 +29,7 @@ function TrandingProduct() {
                                                         </span>
                                                         <i className="fa-solid fa-bookmark" />
                                                     </div>
-                                                    <img src="assets/images/products/cement-bag.jpg" alt="construction materials" />
+                                                    <img src="assets/images/products/cement-bag.svg" alt="construction materials" />
                                                 </a>
                                                 <div className="body-content">
                                                     <a href="/shop">
@@ -53,7 +53,7 @@ function TrandingProduct() {
                                                         </span>
                                                         <i className="fa-solid fa-bookmark" />
                                                     </div>
-                                                    <img src="assets/images/products/steel-rebar.jpg" alt="construction materials" />
+                                                    <img src="assets/images/products/steel-rebar.svg" alt="construction materials" />
                                                 </a>
                                                 <div className="body-content">
                                                     <a href="/shop">
@@ -77,7 +77,7 @@ function TrandingProduct() {
                                                         </span>
                                                         <i className="fa-solid fa-bookmark" />
                                                     </div>
-                                                    <img src="assets/images/products/marine-plywood.jpg" alt="construction materials" />
+                                                    <img src="assets/images/products/marine-plywood.svg" alt="construction materials" />
                                                 </a>
                                                 <div className="body-content">
                                                     <a href="/shop">
@@ -101,7 +101,7 @@ function TrandingProduct() {
                                                         </span>
                                                         <i className="fa-solid fa-bookmark" />
                                                     </div>
-                                                    <img src="assets/images/products/concrete-blocks.jpg" alt="construction materials" />
+                                                    <img src="assets/images/products/concrete-blocks.svg" alt="construction materials" />
                                                 </a>
                                                 <div className="body-content">
                                                     <a href="/shop">
@@ -125,7 +125,7 @@ function TrandingProduct() {
                                                         </span>
                                                         <i className="fa-solid fa-bookmark" />
                                                     </div>
-                                                    <img src="assets/images/products/safety-helmet.jpg" alt="construction materials" />
+                                                    <img src="assets/images/products/safety-helmet.svg" alt="construction materials" />
                                                 </a>
                                                 <div className="body-content">
                                                     <a href="/shop">
@@ -149,7 +149,7 @@ function TrandingProduct() {
                                                         </span>
                                                         <i className="fa-solid fa-bookmark" />
                                                     </div>
-                                                    <img src="assets/images/products/pvc-pipe.jpg" alt="construction materials" />
+                                                    <img src="assets/images/products/pvc-pipe.svg" alt="construction materials" />
                                                 </a>
                                                 <div className="body-content">
                                                     <a href="/shop">
@@ -173,7 +173,7 @@ function TrandingProduct() {
                                                         </span>
                                                         <i className="fa-solid fa-bookmark" />
                                                     </div>
-                                                    <img src="assets/images/products/electrical-wire.jpg" alt="construction materials" />
+                                                    <img src="assets/images/products/electrical-wire.svg" alt="construction materials" />
                                                 </a>
                                                 <div className="body-content">
                                                     <a href="/shop">
@@ -197,7 +197,7 @@ function TrandingProduct() {
                                                         </span>
                                                         <i className="fa-solid fa-bookmark" />
                                                     </div>
-                                                    <img src="assets/images/products/power-drill.jpg" alt="construction materials" />
+                                                    <img src="assets/images/products/power-drill.svg" alt="construction materials" />
                                                 </a>
                                                 <div className="body-content">
                                                     <a href="/shop">

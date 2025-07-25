@@ -24,7 +24,7 @@ function LessDiscountTwo() {
                                             <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
                                                 <div className="single-shopping-card-one tranding-product with-progress">
                                                     <a href="/shop" className="thumbnail-preview">
-                                                        <img src="assets/images/products/steel-rebar.jpg" alt="construction materials" />
+                                                        <img src="assets/images/products/steel-rebar.svg" alt="construction materials" />
                                                     </a>
                                                     <div className="body-content">
                                                         <div className="top">
@@ -68,7 +68,7 @@ function LessDiscountTwo() {
                                             <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
                                                 <div className="single-shopping-card-one tranding-product with-progress">
                                                     <a href="/shop" className="thumbnail-preview">
-                                                        <img src="assets/images/products/marine-plywood.jpg" alt="construction materials" />
+                                                        <img src="assets/images/products/marine-plywood.svg" alt="construction materials" />
                                                     </a>
                                                     <div className="body-content">
                                                         <div className="top">
@@ -112,7 +112,7 @@ function LessDiscountTwo() {
                                             <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
                                                 <div className="single-shopping-card-one tranding-product with-progress">
                                                     <a href="/shop" className="thumbnail-preview">
-                                                        <img src="assets/images/products/concrete-blocks.jpg" alt="construction materials" />
+                                                        <img src="assets/images/products/concrete-blocks.svg" alt="construction materials" />
                                                     </a>
                                                     <div className="body-content">
                                                         <div className="top">
