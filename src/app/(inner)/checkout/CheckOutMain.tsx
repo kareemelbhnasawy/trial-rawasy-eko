@@ -51,6 +51,75 @@ export default function CheckOutMain() {
         setBillingInfo({ ...billingInfo, [id]: value });
     };
 
+    const validateForm = () => {
+        const requiredFields = ['email', 'firstName', 'lastName', 'country', 'street', 'city', 'state', 'zip', 'phone'];
+        for (const field of requiredFields) {
+            if (!billingInfo[field as keyof typeof billingInfo]) {
+                toast.error(`Please fill in ${field.replace(/([A-Z])/g, ' $1').toLowerCase()}`);
+                return false;
+            }
+        }
+        if (!paymentMethod) {
+            toast.error('Please select a payment method');
+            return false;
+        }
+        if (!termsAccepted) {
+            toast.error('Please accept the terms and conditions');
+            return false;
+        }
+        if (cartItems.filter(item => item.active).length === 0) {
+            toast.error('Your cart is empty');
+            return false;
+        }
+        return true;
+    };
+
+    const handlePlaceOrder = (e: React.FormEvent) => {
+        e.preventDefault();
+
+        if (!validateForm()) return;
+
+        try {
+            // Convert cart items to order items
+            const activeCartItems = cartItems.filter(item => item.active);
+            const orderItems: OrderItem[] = activeCartItems.map(item => ({
+                id: item.id,
+                image: item.image,
+                title: item.title,
+                price: item.price,
+                quantity: item.quantity
+            }));
+
+            // Create order
+            const newOrder = addOrder({
+                status: 'pending',
+                items: orderItems,
+                subtotal,
+                discount: discountAmount,
+                shipping: shippingCost,
+                total,
+                billingInfo,
+                paymentMethod,
+            });
+
+            // Clear cart items (remove active items only)
+            const updatedCartItems = cartItems.filter(item => !item.active);
+            localStorage.setItem('cart', JSON.stringify(updatedCartItems));
+
+            // Show success message
+            toast.success(`Order placed successfully! Order number: ${newOrder.orderNumber}`);
+
+            // Redirect to account page
+            setTimeout(() => {
+                router.push('/account');
+            }, 2000);
+
+        } catch (error) {
+            console.error('Error placing order:', error);
+            toast.error('Failed to place order. Please try again.');
+        }
+    };
+
     const [showCoupon, setShowCoupon] = useState(false);
     const toggleCouponInput = () => {
         setShowCoupon((prev) => !prev);
