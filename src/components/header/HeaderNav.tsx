@@ -57,7 +57,7 @@ function ComponentName() {
                                     <Nav />
                                 </div>
                                 {/* button-area */}
-                                <div className="right-btn-area">
+                                {/* <div className="right-btn-area">
                                     <a href="#" className="btn-narrow">
                                         Trending Products
                                     </a>
@@ -65,7 +65,7 @@ function ComponentName() {
                                         Get 30% Discount Now
                                         <span>Sale</span>
                                     </button>
-                                </div>
+                                </div> */}
                                 {/* button-area end */}
                             </div>
                         </div>
