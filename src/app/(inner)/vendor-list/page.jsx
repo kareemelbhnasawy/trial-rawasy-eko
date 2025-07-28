@@ -112,7 +112,7 @@ export default function VendorListPage() {
                                                 <div key={vendor.id} className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
                                                     <div className="single-vendor-area">
                                                         <div className="logo-vendor">
-                                                            <img src={`/assets/images/vendor/${vendor.logo}`} alt={vendor.name} />
+                                                            <img src={`${vendor.logo}`} alt={vendor.name} />
                                                         </div>
                                                         <h3 className="title">
                                                             {vendor.name} <span className="open">Open</span>
