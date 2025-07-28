@@ -19,7 +19,7 @@ function BlogOne() {
     return (
         <div>
             {/* rts top tranding product area */}
-            <div className="blog-area-start rts-section-gapBottom">
+            {/* <div className="blog-area-start rts-section-gapBottom">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
@@ -51,7 +51,7 @@ function BlogOne() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* rts top tranding product area end */}
         </div>
     );
