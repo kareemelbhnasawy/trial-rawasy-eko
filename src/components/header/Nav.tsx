@@ -171,12 +171,12 @@ function NavItem() {
                             </li>
                         </ul>
                     </li> */}
-                    <li className="parent">
+                    {/* <li className="parent">
                         <a href="/dashboard">
                             Dashboard
                             <span className="badge">New</span>
                         </a>
-                    </li>
+                    </li> */}
                     <li className="parent">
                         <a href="/contact">Contact</a>
                     </li>
