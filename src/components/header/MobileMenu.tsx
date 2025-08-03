@@ -35,7 +35,7 @@ const MobileMenu = () => {
                 <li><Link className="main" href="/about">About</Link></li>
 
                 {/* Pages */}
-                <li className={`has-droupdown ${openMenuIndex === 1 ? 'mm-active' : ''}`}>
+                {/* <li className={`has-droupdown ${openMenuIndex === 1 ? 'mm-active' : ''}`}>
                     <a href="#" className="main" onClick={() => toggleMenu(1)}>Pages</a>
                     <ul className={`submenu mm-collapse ${openMenuIndex === 1 ? 'mm-show' : ''}`}>
                         <li><Link className="mobile-menu-link" href="/about">About</Link></li>
@@ -49,15 +49,16 @@ const MobileMenu = () => {
                         <li><Link className="mobile-menu-link" href="/terms-condition">Terms Condition</Link></li>
                         <li><Link className="mobile-menu-link" href="/404">Error Page</Link></li>
                     </ul>
-                </li>
+                </li> */}
 
                 {/* Shop */}
-                <li className={`has-droupdown ${openMenuIndex === 2 ? 'mm-active' : ''}`}>
+                <li><Link className="main" href="/shop">Shop</Link></li>
+                {/* <li className={`has-droupdown ${openMenuIndex === 2 ? 'mm-active' : ''}`}>
                     <a href="#" className="main" onClick={() => toggleMenu(2)}>Shop</a>
-                    <ul className={`submenu mm-collapse ${openMenuIndex === 2 ? 'mm-show' : ''}`}>
+                    <ul className={`submenu mm-collapse ${openMenuIndex === 2 ? 'mm-show' : ''}`}> */}
 
                         {/* Shop Layout */}
-                        <li className="has-droupdown third-lvl">
+                        {/* <li className="has-droupdown third-lvl">
                             <a href="#" className="main" onClick={() => toggleThirdMenu('shopLayout')}>Shop Layout</a>
                             <ul className={`submenu-third-lvl mm-collapse ${openThirdLevelKey === 'shopLayout' ? 'mm-show' : ''}`}>
                                 <li><Link href="/shop-grid-sidebar">Shop Grid Sidebar</Link></li>
@@ -65,10 +66,10 @@ const MobileMenu = () => {
                                 <li><Link href="/shop-grid-top-filter">Shop Grid Top Filter</Link></li>
                                 <li><Link href="/shop-list-top-filter">Shop List Top Filter</Link></li>
                             </ul>
-                        </li>
+                        </li> */}
 
                         {/* Shop Details */}
-                        <li className="has-droupdown third-lvl">
+                        {/* <li className="has-droupdown third-lvl">
                             <a href="#" className="main" onClick={() => toggleThirdMenu('shopDetails')}>Shop Details</a>
                             <ul className={`submenu-third-lvl mm-collapse ${openThirdLevelKey === 'shopDetails' ? 'mm-show' : ''}`}>
                                 <li><Link href="/shop-details">Shop Details</Link></li>
@@ -76,10 +77,10 @@ const MobileMenu = () => {
                                 <li><Link href="/shop-grid-top-filter">Shop Grid Top Filter</Link></li>
                                 <li><Link href="/shop-list-top-filter">Shop List Top Filter</Link></li>
                             </ul>
-                        </li>
+                        </li> */}
 
                         {/* Product Feature */}
-                        <li className="has-droupdown third-lvl">
+                        {/* <li className="has-droupdown third-lvl">
                             <a href="#" className="main" onClick={() => toggleThirdMenu('productFeature')}>Product Feature</a>
                             <ul className={`submenu-third-lvl mm-collapse ${openThirdLevelKey === 'productFeature' ? 'mm-show' : ''}`}>
                                 <li><Link href="/shop-details-variable">Shop Details Variable</Link></li>
@@ -87,10 +88,10 @@ const MobileMenu = () => {
                                 <li><Link href="/shop-details-group">Shop Details Group</Link></li>
                                 <li><Link href="/shop-compare">Shop Compare</Link></li>
                             </ul>
-                        </li>
+                        </li> */}
 
                         {/* Shop Others */}
-                        <li className="has-droupdown third-lvl">
+                        {/* <li className="has-droupdown third-lvl">
                             <a href="#" className="main" onClick={() => toggleThirdMenu('shopOthers')}>Shop Others</a>
                             <ul className={`submenu-third-lvl mm-collapse ${openThirdLevelKey === 'shopOthers' ? 'mm-show' : ''}`}>
                                 <li><Link href="/cart">Cart</Link></li>
@@ -99,19 +100,20 @@ const MobileMenu = () => {
                             </ul>
                         </li>
                     </ul>
-                </li>
+                </li> */}
 
                 {/* Blog */}
-                <li className={`has-droupdown ${openMenuIndex === 3 ? 'mm-active' : ''}`}>
+                {/* <li className={`has-droupdown ${openMenuIndex === 3 ? 'mm-active' : ''}`}>
                     <a href="#" className="main" onClick={() => toggleMenu(3)}>Blog</a>
                     <ul className={`submenu mm-collapse ${openMenuIndex === 3 ? 'mm-show' : ''}`}>
                         <li><Link className="mobile-menu-link" href="/blog">Blog</Link></li>
                         <li><Link className="mobile-menu-link" href="/blog-list-left-sidebar">Blog Left Sidebar</Link></li>
                         <li><Link className="mobile-menu-link" href="/blog-list-right-sidebar">Blog List Right Sidebar</Link></li>
                     </ul>
-                </li>
+                </li> */}
 
                 {/* Contact */}
+                 <li><Link className="main" href="/vendor-list">Vendor List</Link></li>
                 <li><Link className="main" href="/contact">Contact Us</Link></li>
 
             </ul>
